@@ -38,13 +38,21 @@ npm install
 ```
 
 ## Technologies To Be Used / System Design
--React Native
--React Navigation
--TailWind CSS (NativeWind)
--Expo
--Redux
--MVVM
--API libraries and dependencies:
+- React Native
+- React Navigation
+- TailWind CSS (NativeWind)
+- Expo
+- Redux
+- Authorization and Authentication (Firebase)
+- MVVM
+- API libraries and dependencies:
++ Geolocation Map API
++ USPS Address Verification API
++ Twilio SMS Text Message Verification API
++ Apple Pay API and Google Pay API
++ QR Code Loyalty Program API
++ Looping video: react-native-video
++ and more!
 
 
 ##Contributing
