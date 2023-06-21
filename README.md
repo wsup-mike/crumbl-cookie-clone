@@ -27,15 +27,15 @@ To run the Crumbl Cookie Clone app locally, follow these steps:
    ```
 
 2. Install dependencies:
-```
-cd crumbl-cookie-clone
-npm install
-```
+   ```
+   cd crumbl-cookie-clone
+   npm install
+   ```
 3. Run the app:
-```
-cd crumbl-cookie-clone
-npm install
-```
+   ```
+   cd crumbl-cookie-clone
+   npm install
+   ```
 
 ## Technologies To Be Used / System Design
 - React Native
