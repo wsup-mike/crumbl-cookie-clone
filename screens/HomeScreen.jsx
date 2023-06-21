@@ -3,7 +3,7 @@ import React from 'react'
 
 const HomeScreen = () => {
   return (
-    <View>
+    <View classname='flex'>
       <Text>The Mutha Frikin Crumbl Cookie Clone App</Text>
     </View>
   )
