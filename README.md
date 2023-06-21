@@ -33,8 +33,7 @@ To run the Crumbl Cookie Clone app locally, follow these steps:
    ```
 3. Run the app:
    ```
-   cd crumbl-cookie-clone
-   npm install
+   npm start
    ```
 
 ## Technologies To Be Used / System Design
