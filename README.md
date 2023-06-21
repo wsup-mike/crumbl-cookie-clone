@@ -1,5 +1,7 @@
 # Current Project in Progress: Mobile App (Crumbl Cookie Clone App)
 ![image](https://github.com/wsup-mike/crumbl-cookie-clone/assets/40747156/d8bf4d55-512e-4e74-b297-709b27c2dbfc)
+![image](https://github.com/wsup-mike/crumbl-cookie-clone/assets/40747156/00edf29d-6530-4238-8f1b-b1126219e920)
+
 
 ## Work in Progress
 This project is currently a work in progress and serves as a showcase of my development capabilities using the React/React Native stack. It aims to replicate the functionality of the Crumbl Cookie app, demonstrating my skills in building mobile applications.
@@ -25,3 +27,28 @@ To run the Crumbl Cookie Clone app locally, follow these steps:
    ```
 
 2. Install dependencies:
+```
+cd crumbl-cookie-clone
+npm install
+```
+3. Run the app:
+```
+cd crumbl-cookie-clone
+npm install
+```
+
+## Technologies To Be Used / System Design
+React Native
+React Navigation
+TailWind CSS (NativeWind)
+Expo
+Redux
+MVVM
+API libraries and dependencies:
+- 
+
+##Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
