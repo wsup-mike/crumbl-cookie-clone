@@ -38,13 +38,13 @@ npm install
 ```
 
 ## Technologies To Be Used / System Design
-React Native
-React Navigation
-TailWind CSS (NativeWind)
-Expo
-Redux
-MVVM
-API libraries and dependencies:
+-React Native
+-React Navigation
+-TailWind CSS (NativeWind)
+-Expo
+-Redux
+-MVVM
+-API libraries and dependencies:
 
 
 ##Contributing
