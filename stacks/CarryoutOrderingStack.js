@@ -28,11 +28,7 @@ import ReasonForCancellation from "../modals/ReasonForCancellation";
 const Stack = createStackNavigator();
 
 const CarryoutOrderingStack = () => {
-  return (
-    <View>
-      <Text>CarryoutOrderingStack</Text>
-    </View>
-  );
+  return <Stack.Navigator></Stack.Navigator>;
 };
 
 export default CarryoutOrderingStack;
