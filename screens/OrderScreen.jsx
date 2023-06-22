@@ -12,7 +12,7 @@ const OrderScreen = () => {
         <View>
             <Text className='text-3xl text-center'>ORDER SCREEN:5 Options to Order</Text>
             <Button
-              title='StorePickupOrderingStack' 
+              title='DeliveryOrderingStack' 
               onPress={() => {}}
             />
              
@@ -24,19 +24,19 @@ const OrderScreen = () => {
           
             
             <Button 
-              title='StorePickupOrderingStack' 
+              title='CateringPickupOrderingStack' 
               onPress={() => {}}
             />
            
             
             <Button 
-              title='StorePickupOrderingStack' 
+              title='ShippingOrderingStack' 
               onPress={() => {}}
             />
         
             
             <Button 
-              title='StorePickupOrderingStack' 
+              title='SubscriptionOrderingStack' 
               onPress={() => {}}
             />
    
