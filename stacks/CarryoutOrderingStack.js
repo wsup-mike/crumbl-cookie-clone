@@ -24,11 +24,59 @@ import OrderIsProcessingScreen from "../screens/orderscreens/OrderIsProcessingSc
 import OrderSuccessScreen from "../screens/orderscreens/OrderSuccessScreen";
 import FinalOrderConfirmation from "../modals/FinalOrderConfirmation";
 import ReasonForCancellation from "../modals/ReasonForCancellation";
+import AdditionalPaymentOption from "../modals/AdditionalPaymentOption";
 
 const Stack = createStackNavigator();
 
 const CarryoutOrderingStack = () => {
-  return <Stack.Navigator></Stack.Navigator>;
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="CarryoutOrderScreen"
+        component={CarryoutOrderScreen}
+      />
+      <Stack.Screen
+        name="SelectPickupLocation"
+        component={SelectPickupLocation}
+      />
+      <Stack.Screen name="PickupDateTime" component={PickupDateTime} />
+      <Stack.Screen name="SelectYourCookies" component={SelectYourCookies} />
+      <Stack.Screen name="AllergyNutrition" component={AllergyNutrition} />
+      <Stack.Screen name="GiftWrapOptions" component={GiftWrapOptions} />
+      <Stack.Screen name="CookiesGame" component={CookiesGame} />
+      <Stack.Screen name="Drinks" component={Drinks} />
+      <Stack.Screen name="ReviewOrder" component={ReviewOrder} />
+      <Stack.Screen name="AddNoteToOrder" component={AddNoteToOrder} />
+      <Stack.Screen name="PickupPersonName" component={PickupPersonName} />
+      <Stack.Screen name="TipPaymentBakers" component={TipPaymentBakers} />
+      <Stack.Screen name="CustomTip" component={CustomTip} />
+      <Stack.Screen name="PriceBreakdown" component={PriceBreakdown} />
+      <Stack.Screen
+        name="PaymentMethodScreen"
+        component={PaymentMethodScreen}
+      />
+      <Stack.Screen name="AddCardScreen" component={AddCardScreen} />
+      <Stack.Screen
+        name="AdditionalPaymentOption"
+        component={AdditionalPaymentOption}
+      />
+      <Stack.Screen name="UseGiftCardVoucher" component={UseGiftCardVoucher} />
+      <Stack.Screen name="EnterPromoCode" component={EnterPromoCode} />
+      <Stack.Screen
+        name="OrderIsProcessingScreen"
+        component={OrderIsProcessingScreen}
+      />
+      <Stack.Screen name="OrderSuccessScreen" component={OrderSuccessScreen} />
+      <Stack.Screen
+        name="FinalOrderConfirmation"
+        component={FinalOrderConfirmation}
+      />
+      <Stack.Screen
+        name="ReasonForCancellation"
+        component={ReasonForCancellation}
+      />
+    </Stack.Navigator>
+  );
 };
 
 export default CarryoutOrderingStack;
