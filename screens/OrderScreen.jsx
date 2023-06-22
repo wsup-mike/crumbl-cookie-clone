@@ -4,10 +4,8 @@ import { useNavigation } from '@react-navigation/native'
 
 
 const OrderScreen = () => {
+  const navigation = useNavigation();
 
-  const goToPickupLocation = () => {
-
-  }
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
