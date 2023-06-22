@@ -7,9 +7,9 @@ const Stack = createStackNavigator();
 
 const OrderStack = () => {
   return (
-    <View>
-      <Text>OrderStack</Text>
-    </View>
+    <Stack.Navigator>
+      <Stack.Screen name="Order" component={OrderScreen} />
+    </Stack.Navigator>
   );
 };
 
