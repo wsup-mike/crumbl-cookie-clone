@@ -24,7 +24,6 @@ import OrderIsProcessingScreen from "../screens/orderscreens/OrderIsProcessingSc
 import OrderSuccessScreen from "../screens/orderscreens/OrderSuccessScreen";
 import FinalOrderConfirmation from "../modals/FinalOrderConfirmation";
 import ReasonForCancellation from "../modals/ReasonForCancellation";
-import AdditionalPaymentOption from "../modals/AdditionalPaymentOption";
 
 const Stack = createStackNavigator();
 
