@@ -5,11 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 const Stack = createStackNavigator();
 
 const StorePickupOrderingStack = () => {
-  return (
-    <View>
-      <Text>StorePickupOrderingStack</Text>
-    </View>
-  );
+  return <Stack.Navigator></Stack.Navigator>;
 };
 
 export default StorePickupOrderingStack;
