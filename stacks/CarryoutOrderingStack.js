@@ -17,7 +17,7 @@ import CustomTip from "../modals/CustomTip";
 import PriceBreakdown from "../modals/PriceBreakdown";
 import PaymentMethodScreen from "../screens/orderscreens/PaymentMethodScreen";
 import AddCardScreen from "../screens/orderscreens/AddCardScreen";
-import AddtionalPaymentOption from "../modals/AdditionalPaymentOption";
+import AdditionalPaymentOption from "../modals/AdditionalPaymentOption";
 import UseGiftCardVoucher from "../modals/UseGiftCardVoucher";
 import EnterPromoCode from "../modals/EnterPromoCode";
 import OrderIsProcessingScreen from "../screens/orderscreens/OrderIsProcessingScreen";
