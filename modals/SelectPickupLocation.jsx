@@ -3,6 +3,9 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 const SelectPickupLocation = () => {
+
+  const navigation = useNavigation();
+  
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
