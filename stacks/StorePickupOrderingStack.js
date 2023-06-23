@@ -19,7 +19,11 @@ const StorePickupOrderingStack = () => {
           headerShown: false, // Hide header
         }}
       />
-      <Stack.Screen name="StorePickupOption" component={StorePickupOption} />
+      <Stack.Screen
+        name="StorePickupOption"
+        component={StorePickupOption}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen
         name="TestingModal"
         component={TestingModal}
