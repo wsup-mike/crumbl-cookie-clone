@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-native";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
@@ -13,7 +14,17 @@ const Tab = createBottomTabNavigator();
 
 const RootNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        headerTitle: () => (
+          <Image
+            source={require("./assets/Panera.png")}
+            style={{ width: 120, height: 30 }}
+            resizeMode="contain"
+          />
+        ),
+      })}
+    >
       <Tab.Screen name="Menu" component={HomeScreen} />
       <Tab.Screen name="OrderStack" component={OrderStack} />
       <Tab.Screen name="Wallet" component={WalletScreen} />
