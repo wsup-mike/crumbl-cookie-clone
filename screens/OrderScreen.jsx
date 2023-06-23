@@ -12,13 +12,16 @@ const OrderScreen = () => {
             <Text className='text-3xl text-center'>ORDER SCREEN:5 Options to Order</Text>
             <Button
               title='DeliveryOrderingStack' 
-              onPress={() => {}}
+              onPress={() => {
+              }}
             />
              
             
             <Button 
               title='StorePickupOrderingStack' 
-              onPress={() => {}}
+              onPress={() => {
+                navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'});
+              }}
             />
           
             
