@@ -20,7 +20,7 @@ const OrderScreen = () => {
             <Button 
               title='StorePickupOrderingStack' 
               onPress={() => {
-                navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'});
+                navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'}); 
               }}
             />
           
