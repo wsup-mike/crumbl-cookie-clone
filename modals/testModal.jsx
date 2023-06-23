@@ -5,7 +5,7 @@ const testModal = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
-            <Text className='text-3xl text-center'>Test Modal</Text>
+            <Text className='text-3xl text-center'>Test Modal. Try me! Swipe down!</Text>
         </View>
     </SafeAreaView>
   )
