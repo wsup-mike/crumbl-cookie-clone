@@ -5,7 +5,7 @@ const StorePickupOption = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
-            <Text className='text-3xl text-center'>Store Pickup Option Modal: Carryout or Curbside</Text>
+            <Text className='text-3xl text-center text-black'>StorePickupOption Modal: Carryout or Curbside</Text>
         </View>
     </SafeAreaView>
   )
