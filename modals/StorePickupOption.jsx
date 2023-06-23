@@ -11,10 +11,10 @@ const StorePickupOption = () => {
         <View>
             <Text className='text-3xl text-center text-black'>StorePickupOption Modal: Carryout or Curbside</Text>
             <Button title='Carryout' onPress={() => {
-              navigation.navigate('CarryoutOrderingStack')
+              navigation.navigate('CarryoutOrderingStack', {screen: 'CarryoutOrderScreen'})
             }}/>
             <Button title='Curbside' onPress={() => {
-              
+              navigation.navigate('CurbsideOrderingStack', {screen: 'CurbsideOrderScreen'})
             }}/>
         </View>
     </SafeAreaView>
