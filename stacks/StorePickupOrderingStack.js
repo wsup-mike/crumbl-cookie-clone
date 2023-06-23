@@ -5,7 +5,7 @@ import SelectPickupLocation from "../modals/SelectPickupLocation";
 import StorePickupOption from "../modals/StorePickupOption";
 import CarryoutOrderingStack from "./CarryoutOrderingStack";
 import CurbsideOrderingStack from "./CurbsideOrderingStack";
-import testModal from "../modals/testModal";
+import TestingModal from "../modals/TestingModal";
 
 const Stack = createStackNavigator();
 
@@ -20,7 +20,13 @@ const StorePickupOrderingStack = () => {
         }}
       />
       <Stack.Screen name="StorePickupOption" component={StorePickupOption} />
-      <Stack.Screen name="testModal" component={testModal} />
+      <Stack.Screen
+        name="TestingModal"
+        component={TestingModal}
+        options={{
+          headerShown: false, // Hide header
+        }}
+      />
       <Stack.Screen
         name="CarryoutOrderingStack"
         component={CarryoutOrderingStack}

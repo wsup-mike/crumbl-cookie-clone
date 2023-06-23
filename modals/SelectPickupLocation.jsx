@@ -16,6 +16,12 @@ const SelectPickupLocation = () => {
                 navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
               }}
             />
+            <Button 
+              title='TestingModal'
+              onPress={() => {
+                navigation.navigate('StorePickupOrderingStack', { screen: 'TestingModal'})
+              }}
+            />
         </View>
     </SafeAreaView>
   )
