@@ -14,6 +14,9 @@ const StorePickupOrderingStack = () => {
       <Stack.Screen
         name="SelectPickupLocation"
         component={SelectPickupLocation}
+        options={{
+          headerShown: false, // Hide header
+        }}
       />
       <Stack.Screen name="StorePickupOption" component={StorePickupOption} />
       <Stack.Screen
