@@ -1,47 +1,23 @@
-import { View, Text, SafeAreaView, Button, Animated, StyleSheet } from 'react-native'
+import { View, Text, SafeAreaView, Button, Animated } from 'react-native'
 import React, { useState, useRef } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import TestingModal from './TestingModal'
 
 const SelectPickupLocation = () => {
   const [modalVisible, setModalVisible] = useState(false);
-  const scaleValue = useRef(new Animated.Value(1)).current;
 
   const navigation = useNavigation();
   
   const openModal = () => {
     setModalVisible(true)
-    animateScreenExpand();
   }
 
   const closeModal = () => {
     setModalVisible(false)
-    animateScreenShrink()
   }
-
-  const animateScreenShrink = () => {
-    Animated.timing(scaleValue, {
-      toValue: 1, // Scale down to 85% of the original size
-      duration: 300, // Adjust the duration as per your preference
-      useNativeDriver: true,
-    }).start();
-  };
-
-  const animateScreenExpand = () => {
-    Animated.timing(scaleValue, {
-      toValue: .85, // Restore the original size
-      duration: 300, // Adjust the duration as per your preference
-      useNativeDriver: true,
-    }).start();
-  };
 
   return (
     <SafeAreaView className='flex-1 bg-cyan-400'>
-      
-      <Animated.View
-        className='flex-1'
-        style={{ transform: [{ scale: scaleValue }] }}
-      >
         <View className='flex-1 items-center justify-center'>
           <Text className='text-3xl mt-8 mb-6 text-center'>SelectPickupLocation Modal</Text>
           <Button 
@@ -60,7 +36,7 @@ const SelectPickupLocation = () => {
             onClose={closeModal}
           />
         </View>
-      </Animated.View>
+      
         
     </SafeAreaView>
   )
