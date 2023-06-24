@@ -1,11 +1,13 @@
-import { View, Text, SafeAreaView, Button } from 'react-native'
-import React, { useState } from 'react'
+import { View, Text, SafeAreaView, Button, Animated, Easing, StyleSheet } from 'react-native'
+import React, { useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import TestingModal from './TestingModal'
 
 const SelectPickupLocation = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
+  const navigation = useNavigation();
+  
   const openModal = () => {
     setModalVisible(true)
   }
@@ -14,34 +16,27 @@ const SelectPickupLocation = () => {
     setModalVisible(false)
   }
 
-  const navigation = useNavigation();
-
-  const containerStyle = `
-    flex-1 bg-${modalVisible ? 'black' : 'white'} ${modalVisible ? 'rounded-t-3xl' : ''}
-  `
-
-  const screenStyle = `
-    transform ${modalVisible ? 'scale-95' : ''} pt-30 
-  `
-
   return (
-    <SafeAreaView className={containerStyle}>
-        <View className={screenStyle}>
-            <Text className='text-3xl text-center text-black'>SelectPickupLocation Modal</Text>
-            <Button 
-              title='StorePickupOption'
-              onPress={() => {
-                navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
-              }}
-            />
-            <Button 
-              title='Open TestingModal'
-              onPress={openModal}
-            />
-            <TestingModal 
-              visible={modalVisible}
-              onClose={closeModal}
-            />
+    <SafeAreaView className='flex-1'>
+   
+        <View className='flex-1 items-center justify-center'>
+          <Text className='text-3xl text-center text-black'>SelectPickupLocation Modal</Text>
+          <Button 
+            title='StorePickupOption'
+            onPress={() => {
+              navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
+            }}
+          />
+          <Button 
+            title='Open TestingModal'
+            onPress={openModal}
+          />
+          <TestingModal 
+            visible={modalVisible}
+            onClose={closeModal}
+  
+          />
+          <View className='absolute inset-0 bg-black opacity-50' />
         </View>
     </SafeAreaView>
   )
