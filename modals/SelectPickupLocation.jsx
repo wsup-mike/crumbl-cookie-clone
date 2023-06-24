@@ -71,15 +71,14 @@
 
 import React, { useState, useRef } from 'react';
 import { View, Text, SafeAreaView, Button, Animated, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useHeaderHeight } from '@react-navigation/native';
 import TestingModal from './TestingModal';
 
 const SelectPickupLocation = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const scaleValue = useRef(new Animated.Value(1)).current;
-  const backgroundOpacity = useRef(new Animated.Value(0)).current;
-
   const navigation = useNavigation();
+  const headerHeight = useHeaderHeight();
 
   const openModal = () => {
     setModalVisible(true);
@@ -92,54 +91,52 @@ const SelectPickupLocation = () => {
   };
 
   const animateScreenShrink = () => {
-    Animated.parallel([
-      Animated.timing(scaleValue, {
-        toValue: 0.9,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(backgroundOpacity, {
-        toValue: 0.5,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
+    Animated.timing(scaleValue, {
+      toValue: 0.9,
+      duration: 300,
+      useNativeDriver: true,
+    }).start();
   };
 
   const animateScreenExpand = () => {
-    Animated.parallel([
-      Animated.timing(scaleValue, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(backgroundOpacity, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
+    Animated.timing(scaleValue, {
+      toValue: 1,
+      duration: 300,
+      useNativeDriver: true,
+    }).start();
+  };
+
+  const wrapperStyle = {
+    flex: 1,
+    borderTopLeftRadius: modalVisible ? 20 : 0,
+    borderTopRightRadius: modalVisible ? 20 : 0,
+    overflow: 'hidden',
+  };
+
+  const headerStyle = {
+    height: headerHeight,
+    transform: [{ scale: scaleValue }],
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <Animated.View style={[styles.background, { opacity: backgroundOpacity }]} />
-      <View style={styles.wrapper}>
-        <Animated.View style={[styles.content, { transform: [{ scale: scaleValue }] }]}>
-          <View style={styles.innerContent}>
-            <Text style={styles.title}>SelectPickupLocation Modal</Text>
-            <Button
-              title="StorePickupOption"
-              onPress={() => {
-                navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
-              }}
-            />
+      <Animated.View style={[wrapperStyle, { transform: [{ scale: scaleValue }] }]}>
+        <View style={[styles.header, headerStyle]}>
+          <Text style={styles.headerTitle}>SelectPickupLocation</Text>
+        </View>
+        <View style={styles.body}>
+          <Text style={styles.title}>SelectPickupLocation Modal</Text>
+          <Button
+            title="StorePickupOption"
+            onPress={() => {
+              navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
+            }}
+          />
 
-            <Button title="Open TestingModal" onPress={openModal} />
-            <TestingModal visible={modalVisible} onClose={closeModal} />
-          </View>
-        </Animated.View>
-      </View>
+          <Button title="Open TestingModal" onPress={openModal} />
+          <TestingModal visible={modalVisible} onClose={closeModal} />
+        </View>
+      </Animated.View>
     </SafeAreaView>
   );
 };
@@ -147,24 +144,23 @@ const SelectPickupLocation = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  background: {
-    ...StyleSheet.absoluteFillObject,
     backgroundColor: 'black',
   },
-  wrapper: {
-    flex: 1,
+  header: {
+    backgroundColor: 'gray',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  content: {
-    flex: 1,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    overflow: 'hidden',
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'white',
   },
-  innerContent: {
+  body: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'blue',
   },
   title: {
     fontSize: 30,
