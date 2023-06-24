@@ -8,8 +8,9 @@ const TestingModal = ({ visible, onClose }) => {
         isVisible={visible}
         swipeDirection="down"
         onSwipeComplete={onClose}
-        backdropOpacity={0.3}
+        backdropOpacity={0.5}
         style={{ margin: 0, paddingTop: 30}}
+      
     >
         <SafeAreaView className='bg-white rounded-t-3xl flex-1'>
             {/* <View className='bg-red-500 rounded-t-3xl flex-1'> */}
