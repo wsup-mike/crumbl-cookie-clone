@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import SelectPickupLocation from '../modals/SelectPickupLocation'
 
-
 const OrderScreen = () => {
+  const [modalVisible, setModalVisible] = useState(false);
   const navigation = useNavigation();
 
   return (
