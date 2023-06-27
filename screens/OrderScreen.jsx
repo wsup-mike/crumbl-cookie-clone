@@ -6,6 +6,14 @@ import SelectPickupLocation from '../modals/SelectPickupLocation'
 const OrderScreen = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const navigation = useNavigation();
+  
+  const openModal = () => {
+    setModalVisible(true)
+  }
+
+  const closeModal = () => {
+    setModalVisible(false)
+  }
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
