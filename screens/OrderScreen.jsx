@@ -7,9 +7,9 @@ const OrderScreen = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const navigation = useNavigation();
 
-  useEffect(() => {
-    setModalVisible(false); // Hide the modal when entering the screen
-  }, []);
+  // useEffect(() => {
+  //   setModalVisible(false); // Hide the modal when entering the screen
+  // }, []);
   
   const openModal = () => {
     setModalVisible(true)
@@ -19,10 +19,10 @@ const OrderScreen = () => {
     setModalVisible(false)
   }
 
-  const handleStorePickupOrderingStack = () => {
-    openModal();
-    // Additional logic specific to StorePickupOrderingStack if needed
-  };
+  // const handleStorePickupOrderingStack = () => {
+  //   openModal();
+  //   // Additional logic specific to StorePickupOrderingStack if needed
+  // };
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
@@ -39,7 +39,7 @@ const OrderScreen = () => {
               title='StorePickupOrderingStack' 
               onPress={
                 // navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'}); 
-                handleStorePickupOrderingStack
+                openModal
               }
             />
           
