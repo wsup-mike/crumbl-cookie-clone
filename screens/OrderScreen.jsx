@@ -15,6 +15,11 @@ const OrderScreen = () => {
     setModalVisible(false)
   }
 
+  const handleStorePickupOrderingStack = () => {
+    openModal();
+    // Additional logic specific to StorePickupOrderingStack if needed
+  };
+
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
@@ -30,7 +35,7 @@ const OrderScreen = () => {
               title='StorePickupOrderingStack' 
               onPress={
                 // navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'}); 
-                openModal
+                handleStorePickupOrderingStack
               }
             />
           
