@@ -30,7 +30,7 @@ const OrderScreen = () => {
               title='StorePickupOrderingStack' 
               onPress={
                 // navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'}); 
-                openModal();
+                openModal()
               }
             />
           
@@ -52,7 +52,7 @@ const OrderScreen = () => {
               onPress={() => {}}
             />
    
-            <SelectPickupLocation visible={modalVisible} onClose={closeModal} />
+            {modalVisible && <SelectPickupLocation visible={modalVisible} onClose={closeModal} />}
         </View>
     </SafeAreaView>
   )
