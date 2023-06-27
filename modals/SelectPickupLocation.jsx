@@ -1,5 +1,5 @@
 // Refactored with 'classname'
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { View, Text, SafeAreaView, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import TestingModal from './TestingModal';
