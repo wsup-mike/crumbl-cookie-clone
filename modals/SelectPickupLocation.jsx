@@ -1,50 +1,27 @@
 // Refactored with 'classname'
 import React, { useState, useRef } from 'react';
-import { View, Text, SafeAreaView, Button, Animated } from 'react-native';
+import { View, Text, SafeAreaView, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import TestingModal from './TestingModal';
 
 const SelectPickupLocation = () => {
   const [modalVisible, setModalVisible] = useState(false);
-  const scaleValue = useRef(new Animated.Value(1)).current;
 
   const navigation = useNavigation();
 
   const openModal = () => {
     setModalVisible(true);
-    animateScreenShrink();
   };
 
   const closeModal = () => {
     setModalVisible(false);
-    animateScreenExpand();
   };
-
-  const animateScreenShrink = () => {
-    Animated.timing(scaleValue, {
-      toValue: 0.9,
-      duration: 300,
-      useNativeDriver: true,
-    }).start();
-  };
-
-  const animateScreenExpand = () => {
-    Animated.timing(scaleValue, {
-      toValue: 1,
-      duration: 300,
-      useNativeDriver: true,
-    }).start();
-  };
-
-  const containerClassName = 'flex-1 bg-black';
-  const bodyClassName = 'flex-1 items-center justify-center bg-blue';
-  const titleClassName = 'text-white text-3xl mt-8 mb-6 text-center';
 
   return (
-    <SafeAreaView className={containerClassName} style={{ backgroundColor: 'transparent' }}>
-      <Animated.View style={{ flex: 1, transform: [{ scale: scaleValue }] }}>
-        <View className={bodyClassName}>
-          <Text className={titleClassName}>SelectPickupLocation Modal</Text>
+    <SafeAreaView className='flex-1 items-center justify-center'>
+      
+        <View>
+          <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
           <Button
             title="StorePickupOption"
             onPress={() => {
@@ -55,7 +32,7 @@ const SelectPickupLocation = () => {
           <Button title="Open TestingModal" onPress={openModal} />
           <TestingModal visible={modalVisible} onClose={closeModal} />
         </View>
-      </Animated.View>
+      
     </SafeAreaView>
   );
 };
