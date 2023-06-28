@@ -15,8 +15,6 @@ const OrderScreen = () => {
     setModalVisible(false)
   }
 
-
-
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
@@ -30,9 +28,6 @@ const OrderScreen = () => {
             
             <Button 
               title='StorePickupOrderingStack' 
-              // onPress={() => {
-              //   openModal()
-              // }}
               onPress={openModal}
             />
           
