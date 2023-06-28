@@ -35,11 +35,12 @@ const SelectPickupLocation = ({ visible, onClose }) => {
             <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
             <Button 
               title='StorePickupOption'
-              onPress={() => {
-                // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
-                openModal()
-              }}
-
+              // onPress={() => {
+              //   // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
+              //   openModal()
+              // }}
+              
+              onPress={openModal}
             />
 
             {/* <Button title="Open TestingModal" onPress={openModal} /> */}
