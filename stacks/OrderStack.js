@@ -12,7 +12,10 @@ const Stack = createStackNavigator();
 
 const OrderStack = () => {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator
+      initialRouteName="Order"
+      screenOptions={{ headerShown: false }}
+    >
       <Stack.Screen
         name="Order"
         component={OrderScreen}

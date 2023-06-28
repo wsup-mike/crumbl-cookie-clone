@@ -11,8 +11,7 @@ const Stack = createStackNavigator();
 const StorePickupOrderingStack = () => {
   return (
     <Stack.Navigator
-      mode="modal"
-      headerMode="screen"
+      initialRouteName="SelectPickupLocation"
       screenOptions={{
         headerShown: false,
       }}
