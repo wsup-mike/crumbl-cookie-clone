@@ -38,8 +38,8 @@ const OrderScreen = () => {
             <Button 
               title='StorePickupOrderingStack' 
               onPress={() => 
-                // navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'})
-                openModal()
+                navigation.navigate('StorePickupOrderingStack', {screen: 'SelectPickupLocation'})
+                // openModal()
               }
             />
           
