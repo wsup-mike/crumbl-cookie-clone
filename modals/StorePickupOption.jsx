@@ -2,19 +2,21 @@ import { View, Text, SafeAreaView, Button } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import Modal from 'react-native-modal'
-import { HeaderBackButton } from '@react-navigation/stack'
 
 const StorePickupOption = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
-  console.log(navigation)
+  
   useEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
-        <HeaderBackButton onPress={onClose} />
-      ),
-    });
-  }, [navigation, onClose]);
+        <Button 
+          title="Back"
+          onPress={() => navigation.goBack()}
+        />
+      )
+    })
+  }, [navigation]);
 
   return (
     <Modal

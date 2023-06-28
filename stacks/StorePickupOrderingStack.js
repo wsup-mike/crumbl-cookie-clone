@@ -26,7 +26,11 @@ const StorePickupOrderingStack = () => {
       <Stack.Screen
         name="StorePickupOption"
         component={StorePickupOption}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          gestureEnabled: true,
+          animationTypeForReplace: "push",
+        }}
       />
       <Stack.Screen
         name="TestingModal"
