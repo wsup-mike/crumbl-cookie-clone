@@ -18,7 +18,7 @@ const SelectPickupLocation = ({ visible, onClose }) => {
   const closeModal = () => {
     setModalVisible(false);
   };
-
+  
   return (
     <Modal
       isVisible={visible}
