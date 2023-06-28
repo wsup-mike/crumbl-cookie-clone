@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  createStackNavigator,
-  TransitionPresets,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import SelectPickupLocation from "../modals/SelectPickupLocation";
 import StorePickupOption from "../modals/StorePickupOption";
 import CarryoutOrderingStack from "./CarryoutOrderingStack";
@@ -16,7 +13,6 @@ const StorePickupOrderingStack = () => {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        ...TransitionPresets.SlideFromRightIOS,
       }}
     >
       <Stack.Screen
