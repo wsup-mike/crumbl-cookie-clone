@@ -14,7 +14,12 @@ const Stack = createStackNavigator();
 
 const StorePickupOrderingStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+        ...TransitionPresets.SlideFromRightIOS,
+      }}
+    >
       <Stack.Screen
         name="SelectPickupLocation"
         component={SelectPickupLocation}
