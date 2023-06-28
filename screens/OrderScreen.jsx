@@ -19,10 +19,7 @@ const OrderScreen = () => {
     setModalVisible(false)
   }
 
-  // const handleStorePickupOrderingStack = () => {
-  //   openModal();
-  //   // Additional logic specific to StorePickupOrderingStack if needed
-  // };
+
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
