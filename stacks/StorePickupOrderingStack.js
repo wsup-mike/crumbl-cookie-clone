@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 const StorePickupOrderingStack = () => {
   return (
     <Stack.Navigator
-      initialRouteName="SelectPickupLocation"
+      initialRouteName="StorePickupOption"
       screenOptions={{
         headerShown: false,
       }}
