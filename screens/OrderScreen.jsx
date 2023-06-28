@@ -30,9 +30,10 @@ const OrderScreen = () => {
             
             <Button 
               title='StorePickupOrderingStack' 
-              onPress={() => {
-                openModal()
-              }}
+              // onPress={() => {
+              //   openModal()
+              // }}
+              onPress={openModal}
             />
           
             
