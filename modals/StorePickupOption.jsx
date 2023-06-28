@@ -16,7 +16,7 @@ const StorePickupOption = ({ visible, onClose }) => {
       swipeDirection='down'
       style={{ margin: 0, paddingTop: 30 }}
     >
-      <SafeAreaView className='flex-1 items-center justify-center'>
+      <SafeAreaView className='flex-1 bg-white rounded-t-3xl items-center justify-center'>
           <View>
               <Text className='text-3xl text-center text-black'>StorePickupOption Modal: Carryout or Curbside</Text>
               <Button title='Carryout' onPress={() => {

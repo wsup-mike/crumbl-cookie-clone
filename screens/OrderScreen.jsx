@@ -1,15 +1,11 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import SelectPickupLocation from '../modals/SelectPickupLocation'
 
 const OrderScreen = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const navigation = useNavigation();
-
-  // useEffect(() => {
-  //   setModalVisible(false); // Hide the modal when entering the screen
-  // }, []);
   
   const openModal = () => {
     setModalVisible(true)
@@ -34,7 +30,9 @@ const OrderScreen = () => {
             
             <Button 
               title='StorePickupOrderingStack' 
-              onPress={() => {}}
+              onPress={() => {
+                openModal()
+              }}
             />
           
             

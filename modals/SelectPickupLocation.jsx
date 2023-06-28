@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { View, Text, SafeAreaView, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Modal from 'react-native-modal'
-import TestingModal from './TestingModal';
+// import TestingModal from './TestingModal';
 import StorePickupOption from './StorePickupOption';
 
 
@@ -13,7 +13,7 @@ const SelectPickupLocation = ({ visible, onClose }) => {
   const navigation = useNavigation();
 
   const openModal = () => {
-    setModalVisible(true);
+    setModalVisible(visible);
   };
 
   const closeModal = () => {
@@ -36,13 +36,17 @@ const SelectPickupLocation = ({ visible, onClose }) => {
             <Button 
               title='StorePickupOption'
               onPress={() => {
-                navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
+                // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
+                openModal()
               }}
+
             />
 
-            <Button title="Open TestingModal" onPress={openModal} />
-            <TestingModal visible={modalVisible} onClose={closeModal} />
-            <StorePickupOption visible={modalVisible} onClose={closeModal}/>
+            {/* <Button title="Open TestingModal" onPress={openModal} /> */}
+            {/* <TestingModal visible={modalVisible} onClose={closeModal} /> */}
+            {/* <StorePickupOption visible={modalVisible} onClose={closeModal}/> */}
+            {modalVisible && <StorePickupOption visible={modalVisible} onClose={closeModal} />}
+
           </View>
         
       </SafeAreaView>
