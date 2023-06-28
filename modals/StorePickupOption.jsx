@@ -3,15 +3,15 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import Modal from 'react-native-modal'
 
-const StorePickupOption = () => {
+const StorePickupOption = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
 
   return (
     <Modal
-      isVisible={true}
+      isVisible={visible}
       backdropOpacity={0.5}
-      onBackdropPress={onClose}
+      onBackButtonPress={onClose}
       onSwipeComplete={onClose}
       swipeDirection='down'
       style={{ margin: 0, paddingTop: 30 }}
