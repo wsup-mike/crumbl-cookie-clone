@@ -22,7 +22,7 @@ const SelectPickupLocation = ({ visible, onClose }) => {
   
   return (
     <Modal
-      isVisible={visible}
+      isVisible={true}
       backdropOpacity={0.5}
       onBackdropPress={onClose}
       onSwipeComplete={onClose}
