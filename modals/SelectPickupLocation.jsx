@@ -42,6 +42,7 @@ const SelectPickupLocation = ({ visible, onClose }) => {
 
             <Button title="Open TestingModal" onPress={openModal} />
             <TestingModal visible={modalVisible} onClose={closeModal} />
+            <StorePickupOption visible={modalVisible} onClose={closeModal}/>
           </View>
         
       </SafeAreaView>
