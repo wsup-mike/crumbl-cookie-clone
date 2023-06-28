@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, Button } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import Modal from 'react-native-modal'
+import { HeaderBackButton } from '@react-navigation/stack'
 
 const StorePickupOption = ({ visible, onClose }) => {
 
