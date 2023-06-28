@@ -1,11 +1,19 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import Modal from 'react-native-modal'
 
 const StorePickupOption = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => (
+        <HeaderBackButton onPress={onClose} />
+      ),
+    });
+  }, [navigation, onClose]);
 
   return (
     <Modal
