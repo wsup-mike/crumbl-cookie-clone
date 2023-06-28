@@ -7,7 +7,7 @@ import { HeaderBackButton } from '@react-navigation/stack'
 const StorePickupOption = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
-
+  console.log(navigation)
   useEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
