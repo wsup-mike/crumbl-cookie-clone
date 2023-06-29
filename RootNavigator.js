@@ -26,7 +26,7 @@ const RootNavigator = () => {
       })}
     >
       <Tab.Screen name="Menu" component={HomeScreen} />
-      <Tab.Screen name="OrderStack" component={OrderStack} />
+      <Tab.Screen name="Order" component={OrderStack} />
       <Tab.Screen name="Wallet" component={WalletScreen} />
       <Tab.Screen name="Gifts" component={GiftCardScreen} />
       <Tab.Screen name="More" component={AccountScreen} />
