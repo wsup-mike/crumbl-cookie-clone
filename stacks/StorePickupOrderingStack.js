@@ -15,6 +15,12 @@ const StorePickupOrderingStack = () => {
       screenOptions={{
         headerShown: false,
         presentation: "modal",
+        gestureEnabled: true,
+        animationTypeForReplace: false,
+        headerBackTitleVisible: false,
+        headerTransparent: true,
+        headerStyle: { backgroundColor: "transparent" },
+        cardStyle: { backgroundColor: "white" },
       }}
     >
       <Stack.Screen
