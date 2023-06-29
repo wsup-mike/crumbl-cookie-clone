@@ -22,7 +22,6 @@ const StorePickupOption = ({ visible, onClose }) => {
     <Modal
       isVisible={visible}
       backdropOpacity={0.5}
-      onBackButtonPress={onClose}
       onSwipeComplete={onClose}
       swipeDirection='down'
       style={{ margin: 0, paddingTop: 30 }}
