@@ -15,9 +15,10 @@ const SelectPickupLocation = ({ visible, onClose }) => {
   const navigation = useNavigation();
 
   const navigateToStorePickupOption = () => {
-    onClose(); // Close the current modal
+    
     // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
-    setShowStorePickupOption(true)
+    // setShowStorePickupOption(true)
+    navigation.navigate('StorePickupOption')
   };
 
   // const openModal = () => {
@@ -28,13 +29,17 @@ const SelectPickupLocation = ({ visible, onClose }) => {
     setShowStorePickupOption(false);
     onClose();
   };
+
+  const handleStorePickupOptionClose = () => {
+    setShowStorePickupOption(false)
+  }
   
   return (
     <Modal
       isVisible={visible}
       backdropOpacity={0.5}
       // onBackdropPress={onClose}
-      onSwipeComplete={onClose}
+      onSwipeComplete={closeModal}
       swipeDirection='down'
       style={{ margin: 0, paddingTop: 30 }}
     >
@@ -49,7 +54,7 @@ const SelectPickupLocation = ({ visible, onClose }) => {
                 /> 
               </View>
             ) : (
-              <StorePickupOption  onClose={closeModal} />
+              <StorePickupOption  onClose={handleStorePickupOptionClose} />
             )
           }
       </SafeAreaView>
