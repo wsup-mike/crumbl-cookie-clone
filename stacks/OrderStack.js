@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import OrderScreen from "../screens/OrderScreen";
@@ -16,11 +15,7 @@ const OrderStack = () => {
       initialRouteName="Order"
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen
-        name="Order"
-        component={OrderScreen}
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="Order" component={OrderScreen} options={{}} />
       <Stack.Screen
         name="StorePickupOrderingStack"
         component={StorePickupOrderingStack}
