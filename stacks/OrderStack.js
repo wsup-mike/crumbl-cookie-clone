@@ -12,10 +12,10 @@ const Stack = createStackNavigator();
 const OrderStack = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Order"
+      initialRouteName="OrderScreen"
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen name="Order" component={OrderScreen} options={{}} />
+      <Stack.Screen name="OrderScreen" component={OrderScreen} options={{}} />
       <Stack.Screen
         name="StorePickupOrderingStack"
         component={StorePickupOrderingStack}
