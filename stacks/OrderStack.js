@@ -6,6 +6,7 @@ import DeliveryOrderingStack from "./DeliveryOrderingStack";
 import CateringPickupOrderingStack from "./CateringPickupOrderingStack";
 import ShippingOrderingStack from "./ShippingOrderingStack";
 import SubscriptionOrderingStack from "./SubscriptionOrderingStack";
+import SelectPickupLocation from "../modals/SelectPickupLocation";
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,12 @@ const OrderStack = () => {
       screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="OrderScreen" component={OrderScreen} options={{}} />
+      <Stack.Screen
+        name="SelectPickupLocation"
+        component={SelectPickupLocation}
+        options={{ presentation: "modal" }}
+      />
+
       <Stack.Screen
         name="StorePickupOrderingStack"
         component={StorePickupOrderingStack}
