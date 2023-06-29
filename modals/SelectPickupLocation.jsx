@@ -9,21 +9,25 @@ import StorePickupOption from './StorePickupOption';
 
 const SelectPickupLocation = ({ visible, onClose }) => {
   // const [modalVisible, setModalVisible] = useState(false);
+  const [showStorePickupOption, setShowStorePickupOption] = useState(false);
+
 
   const navigation = useNavigation();
 
   const navigateToStorePickupOption = () => {
     onClose(); // Close the current modal
-    navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
+    // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
+    setShowStorePickupOption(true)
   };
 
   // const openModal = () => {
   //   setModalVisible(visible);
   // };
 
-  // const closeModal = () => {
-  //   setModalVisible(false);
-  // };
+  const closeModal = () => {
+    setShowStorePickupOption(false);
+    onClose();
+  };
   
   return (
     <Modal
@@ -35,17 +39,26 @@ const SelectPickupLocation = ({ visible, onClose }) => {
       style={{ margin: 0, paddingTop: 30 }}
     >
       <SafeAreaView className='flex-1 bg-white rounded-t-3xl items-center justify-center'>
-          <View>
-            <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
-            <Button 
-              title='StorePickupOption'
-              onPress={navigateToStorePickupOption}              
-            />
-            {/* <Button title="Open TestingModal" onPress={openModal} /> */}
-            {/* <TestingModal visible={modalVisible} onClose={closeModal} /> */}
-            {/* <StorePickupOption visible={modalVisible} onClose={closeModal}/> */}
-            {/* {modalVisible && <StorePickupOption visible={modalVisible} onClose={closeModal} />} */}
-          </View>
+          {
+            !showStorePickupOption ? (
+              <View>
+                <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
+                <Button 
+                  title='StorePickupOption'
+                  onPress={navigateToStorePickupOption}              
+                /> 
+              </View>
+            ) : (
+              <StorePickupOption  onClose={closeModal} />
+            )
+          }
+          
+          
+          //   {/* <Button title="Open TestingModal" onPress={openModal} /> */}
+          //   {/* <TestingModal visible={modalVisible} onClose={closeModal} /> */}
+          //   {/* <StorePickupOption visible={modalVisible} onClose={closeModal}/> */}
+          //   {/* {modalVisible && <StorePickupOption visible={modalVisible} onClose={closeModal} />} */}
+  
       </SafeAreaView>
     </Modal>
   );
