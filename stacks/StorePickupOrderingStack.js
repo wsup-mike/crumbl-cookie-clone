@@ -14,6 +14,7 @@ const StorePickupOrderingStack = () => {
       initialRouteName="SelectPickupLocation"
       screenOptions={{
         headerShown: false,
+        presentation: "modal",
       }}
     >
       <Stack.Screen
