@@ -50,7 +50,7 @@ const OrderScreen = () => {
             />
    
         </View>
-        {/* {modalVisible && <SelectPickupLocation visible={modalVisible} onClose={closeModal} />} */}
+        {modalVisible && <SelectPickupLocation visible={modalVisible} onClose={closeModal} />}
 
     </SafeAreaView>
   )
