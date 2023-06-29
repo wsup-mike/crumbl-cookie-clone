@@ -12,6 +12,11 @@ const SelectPickupLocation = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
 
+  const navigateToStorePickupOption = () => {
+    onClose(); // Close the current modal
+    navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
+  };
+
   // const openModal = () => {
   //   setModalVisible(visible);
   // };
@@ -34,12 +39,8 @@ const SelectPickupLocation = ({ visible, onClose }) => {
             <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
             <Button 
               title='StorePickupOption'
-              onPress={() => {
-                // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
-                navigation.navigate('StorePickupOrderingStack', {screen:'StorePickupOption'})
-              }}              
+              onPress={navigateToStorePickupOption}              
             />
-
             {/* <Button title="Open TestingModal" onPress={openModal} /> */}
             {/* <TestingModal visible={modalVisible} onClose={closeModal} /> */}
             {/* <StorePickupOption visible={modalVisible} onClose={closeModal}/> */}
