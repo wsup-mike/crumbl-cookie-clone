@@ -35,7 +35,8 @@ const SelectPickupLocation = ({ visible, onClose }) => {
             <Button 
               title='StorePickupOption'
               onPress={() => {
-                navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
+                // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption'})
+                navigation.navigate('StorePickupOrderingStack', {screen:'StorePickupOption'})
               }}              
             />
 
