@@ -21,14 +21,14 @@ const SelectPickupLocation = ({ visible, onClose }) => {
   // };
   
   return (
-    <Modal
-      isVisible={visible}
-      backdropOpacity={0.5}
-      onBackdropPress={onClose}
-      onSwipeComplete={onClose}
-      swipeDirection='down'
-      style={{ margin: 0, paddingTop: 30 }}
-    >
+    // <Modal
+    //   isVisible={visible}
+    //   backdropOpacity={0.5}
+    //   // onBackdropPress={onClose}
+    //   onSwipeComplete={onClose}
+    //   swipeDirection='down'
+    //   style={{ margin: 0, paddingTop: 30 }}
+    // >
       <SafeAreaView className='flex-1 bg-white rounded-t-3xl items-center justify-center'>
           <View>
             <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
@@ -46,7 +46,7 @@ const SelectPickupLocation = ({ visible, onClose }) => {
             {/* {modalVisible && <StorePickupOption visible={modalVisible} onClose={closeModal} />} */}
           </View>
       </SafeAreaView>
-    </Modal>
+    // </Modal>
   );
 };
 
