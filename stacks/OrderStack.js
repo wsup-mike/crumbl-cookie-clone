@@ -14,14 +14,13 @@ const OrderStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="OrderScreen"
-      screenOptions={{ headerShown: false }}
+      screenOptions={{
+        headerShown: false,
+        gestureEnabled: true,
+        gestureDirection: "horizontal",
+      }}
     >
       <Stack.Screen name="OrderScreen" component={OrderScreen} options={{}} />
-      <Stack.Screen
-        name="SelectPickupLocation"
-        component={SelectPickupLocation}
-        options={{ presentation: "modal" }}
-      />
 
       <Stack.Screen
         name="StorePickupOrderingStack"
