@@ -16,9 +16,8 @@ const SelectPickupLocation = ({ visible, onClose }) => {
 
   const navigateToStorePickupOption = () => {
     
-    // navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
-    // setShowStorePickupOption(true)
-    navigation.navigate('StorePickupOption')
+    navigation.navigate('StorePickupOrderingStack', { screen: 'StorePickupOption' });
+    setShowStorePickupOption(true)
   };
 
   // const openModal = () => {
