@@ -1,7 +1,6 @@
-import { View, Text, SafeAreaView} from 'react-native'
+import { View, Text, SafeAreaView, Button} from 'react-native'
 import React from 'react'
-import DeliveryModalStack from "./stacks/DeliveryModalStack";
-
+import DeliveryModalStack from '../stacks/DeliveryModalStack'
 
 const WalletScreen = () => {
   return (
