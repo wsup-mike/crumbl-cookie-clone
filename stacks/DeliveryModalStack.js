@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  CardStyleInterpolators,
-  createStackNavigator,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import horizontalAnimation from "../components/horizontalAnimation";
 import DeliveryModal1 from "../modals/DeliveryModal1";
 import DeliveryModal2 from "../modals/DeliveryModal2";
@@ -16,24 +13,31 @@ const DeliveryModalStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="WalletScreen"
-      screenOptions={{}}
-      // screenOptions={{ headerShown: false }}
+      screenOptions={
+        {
+          // presentation: "modal",
+        }
+      }
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} />
       <Stack.Screen
         name="NormalScreen"
         component={NormalScreen}
-        // options={{ ...horizontalAnimation }}
+        options={{ ...horizontalAnimation }}
       />
       <Stack.Screen
         name="DeliveryModal1"
         component={DeliveryModal1}
-        options={{ presentation: "modal" }}
+        options={{
+          presentation: "modal",
+        }}
       />
       <Stack.Screen
         name="DeliveryModal2"
         component={DeliveryModal2}
-        options={{ presentation: "modal" }}
+        options={{
+          ...horizontalAnimation,
+        }}
       />
       <Stack.Screen
         name="DeliveryModal3"
