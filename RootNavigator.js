@@ -17,15 +17,16 @@ const RootNavigator = () => {
   return (
     <Tab.Navigator
       initialRouteName="Menu"
-      screenOptions={({ route }) => ({
-        headerTitle: () => (
-          <Image
-            source={require("./assets/Panera.png")}
-            style={{ width: 120, height: 30 }}
-            resizeMode="contain"
-          />
-        ),
-      })}
+      // screenOptions={({ route }) => ({
+      //   headerTitle: () => (
+      //     <Image
+      //       source={require("./assets/Panera.png")}
+      //       style={{ width: 120, height: 30 }}
+      //       resizeMode="contain"
+      //     />
+      //   ),
+      // })}
+      screenOptions={{ headerShown: false }}
     >
       <Tab.Screen name="Menu" component={HomeScreen} />
       <Tab.Screen name="Order" component={OrderStack} />
