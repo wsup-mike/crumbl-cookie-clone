@@ -1,4 +1,5 @@
 const horizontalAnimation = {
+  gestureDirection: "horizontal",
   cardStyleInterpolator: ({ current, layouts }) => {
     return {
       cardStyle: {
