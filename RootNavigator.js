@@ -15,6 +15,7 @@ const Tab = createBottomTabNavigator();
 const RootNavigator = () => {
   return (
     <Tab.Navigator
+      initialRouteName="Menu"
       screenOptions={({ route }) => ({
         headerTitle: () => (
           <Image
