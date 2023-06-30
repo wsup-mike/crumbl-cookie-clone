@@ -12,6 +12,7 @@ const DeliveryModalStack = () => {
     <Stack.Navigator
       initialRouteName="WalletScreen"
       // screenOptions={{ headerShown: false }}
+      screenOptions={{ presentation: "modal" }}
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} />
       <Stack.Screen name="DeliveryModal1" component={DeliveryModal1} />
