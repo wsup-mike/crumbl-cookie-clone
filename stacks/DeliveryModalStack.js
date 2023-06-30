@@ -19,6 +19,7 @@ const DeliveryModalStack = () => {
       // screenOptions={{ headerShown: false }}
       screenOptions={{
         presentation: "modal",
+        horizontalAnimation,
       }}
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} />
