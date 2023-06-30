@@ -10,7 +10,7 @@ const WalletScreen = () => {
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
             <Text className='text-3xl text-center'>Wallet Screen:Loyalty Crumbl Cash</Text>
-            <Button title='Modals' onPress={() => {navigation.navigate('DeliveryModalStack', {screen: 'DeliveryModal1'})}}/>
+            <Button title='Modals' onPress={() => {navigation.navigate('DeliveryModalStack')}}/>
         </View>
     </SafeAreaView>
   )
