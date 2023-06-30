@@ -11,7 +11,7 @@ const DeliveryModalStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="DeliveryModal1"
-      screenOptions={{ headerShown: false }}
+      // screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="DeliveryModal1" component={DeliveryModal1} />
       <Stack.Screen name="DeliveryModal2" component={DeliveryModal2} />
