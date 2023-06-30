@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { DeliveryModal1 } from "../modals/DeliveryModal1";
-import { DeliveryModal2 } from "../modals/DeliveryModal2";
-import { DeliveryModal3 } from "../modals/DeliveryModal3";
+import DeliveryModal1 from "../modals/DeliveryModal1";
+import DeliveryModal2 from "../modals/DeliveryModal2";
+import DeliveryModal3 from "../modals/DeliveryModal3";
 
 const DeliveryModalStack = () => {
   const Stack = createStackNavigator();
