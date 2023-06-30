@@ -8,16 +8,14 @@ const DeliveryModalStack = () => {
   const Stack = createStackNavigator();
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="DeliveryModal1"
-        // screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen name="DeliveryModal1" component={DeliveryModal1} />
-        <Stack.Screen name="DeliveryModal2" component={DeliveryModal2} />
-        <Stack.Screen name="DeliveryModal3" component={DeliveryModal3} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator
+      initialRouteName="DeliveryModal1"
+      // screenOptions={{ headerShown: false }}
+    >
+      <Stack.Screen name="DeliveryModal1" component={DeliveryModal1} />
+      <Stack.Screen name="DeliveryModal2" component={DeliveryModal2} />
+      <Stack.Screen name="DeliveryModal3" component={DeliveryModal3} />
+    </Stack.Navigator>
   );
 };
 
