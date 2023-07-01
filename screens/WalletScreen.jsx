@@ -7,7 +7,7 @@ const WalletScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView className='flex-1 items-center justify-center'>
+    <SafeAreaView className='flex-1 items-center justify-center bg-purple-200'>
         <View>
             <Text className='text-3xl text-center'>Wallet Screen:Loyalty Crumbl Cash</Text>
             <Button title='Modals as Stack Animation' onPress={() => navigation.navigate('DeliveryModal1')}/>
