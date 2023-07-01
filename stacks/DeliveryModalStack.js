@@ -52,6 +52,11 @@ const DeliveryModalStack = () => {
         options={{
           // ...horizontalAnimation,
           presentation: "modal",
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+          transitionSpec: {
+            open: customTransitionConfig,
+            close: customTransitionConfig,
+          },
         }}
       />
       <Stack.Screen
@@ -60,6 +65,11 @@ const DeliveryModalStack = () => {
         options={{
           // ...horizontalAnimation,
           presentation: "modal",
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+          transitionSpec: {
+            open: customTransitionConfig,
+            close: customTransitionConfig,
+          },
         }}
       />
     </Stack.Navigator>
