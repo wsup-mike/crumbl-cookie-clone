@@ -17,29 +17,20 @@ const DeliveryModalStack = () => {
         presentation: "modal",
       }}
     >
-      <Stack.Group
-        screenOptions={{
-          headerStyle: { backgroundColor: "papayawhip" },
+      <Stack.Screen name="WalletScreen" component={WalletScreen} options={{}} />
+      <Stack.Screen
+        name="NormalScreen"
+        component={NormalScreen}
+        options={{ ...horizontalAnimation }}
+      />
+      <Stack.Screen
+        name="DeliveryModal1"
+        component={DeliveryModal1}
+        options={{
+          presentation: "modal",
         }}
-      >
-        <Stack.Screen
-          name="WalletScreen"
-          component={WalletScreen}
-          options={{ backgroundColor: "pink" }}
-        />
-        <Stack.Screen
-          name="NormalScreen"
-          component={NormalScreen}
-          // options={{ ...horizontalAnimation }}
-        />
-        <Stack.Screen
-          name="DeliveryModal1"
-          component={DeliveryModal1}
-          options={{
-            presentation: "modal",
-          }}
-        />
-      </Stack.Group>
+      />
+
       <Stack.Screen
         name="DeliveryModal2"
         component={DeliveryModal2}
