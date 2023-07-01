@@ -15,7 +15,6 @@ const DeliveryModalStack = () => {
       initialRouteName="WalletScreen"
       screenOptions={{
         presentation: "modal",
-        ...horizontalAnimation,
       }}
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} />
