@@ -1,5 +1,8 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from "@react-navigation/stack";
 import horizontalAnimation from "../components/horizontalAnimation";
 import DeliveryModal1 from "../modals/DeliveryModal1";
 import DeliveryModal2 from "../modals/DeliveryModal2";
