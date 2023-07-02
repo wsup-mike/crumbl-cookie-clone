@@ -5,11 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 const MenuModalStack = () => {
   const Stack = createStackNavigator();
 
-  return (
-    <View>
-      <Text>MenuModalStack</Text>
-    </View>
-  );
+  return <Stack.Navigator></Stack.Navigator>;
 };
 
 export default MenuModalStack;
