@@ -10,6 +10,10 @@ const StorePickupOption = ({ visible, onClose }) => {
   const openModal = () => {
     setModalVisible(true)
   }
+
+  const closeModal = () => {
+    setModalVisible(false)
+  }
   
   // useEffect(() => {
   //   navigation.setOptions({
