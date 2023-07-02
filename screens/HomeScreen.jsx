@@ -19,14 +19,21 @@ const HomeScreen = () => {
   }
 
   return (
-    
       <SafeAreaView className='flex-1 items-center justify-center'>
-          <View>
-              <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
-              <Button title='Next' onPress={()=> {navigation.navigate('MenuModal1')}}/>
-          </View>
+        <View>
+            <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
+            <Button title='Next' onPress={()=> {navigation.navigate('MenuModal1')}}/>
+        </View>
+      
+        <Modal 
+          isVisible={modalVisible}
+          onBackdropPress={closeModal}
+          animationIn='slideInUp'
+          animationOut='slideOutDown'
+        >
+          <MenuModal1 />
+        </Modal>
       </SafeAreaView>
-    
   )
 }
 
