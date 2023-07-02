@@ -6,11 +6,15 @@ import Modal from 'react-native-modal'
 
 const MenuModal1 = () => {
     const [modalVisible, setModalVisible] = useState(false);
-    
+
     const navigation = useNavigation()
 
+    const openModal = () => {
+        setModalVisible(true)
+    }
+
     const closeModal = () => {
-        navigation.goBack();
+        setModalVisible(false)
     }
         
     return (
