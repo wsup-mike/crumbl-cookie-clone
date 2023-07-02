@@ -17,13 +17,19 @@ const MenuModal1 = () => {
     }
         
     return (
-        <SafeAreaView className='flex-1 items-center justify-center'>
-            <View>
+        <View 
+            className='bg-white border-t-4 pt-8'
+        >
+
+            <SafeAreaView className='flex-1 items-center justify-center'>
+        
                 <Text>MenuModal1</Text>
                 <Button title='Close' onPress={closeModal} />
                 <Button title='Next Again!' onPress={nextModal} />
-            </View>
-        </SafeAreaView>
+        
+            </SafeAreaView>
+
+        </View>
     )
 }
 
