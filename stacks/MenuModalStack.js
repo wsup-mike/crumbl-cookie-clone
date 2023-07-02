@@ -9,7 +9,13 @@ import MenuModal2 from "../modals/MenuModal2";
 const MenuModalStack = () => {
   const Stack = createStackNavigator();
 
-  return <Stack.Navigator></Stack.Navigator>;
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="MenuModal1" component={MenuModal1} />
+      <Stack.Screen name="MenuModal2" component={MenuModal2} />
+    </Stack.Navigator>
+  );
 };
 
 export default MenuModalStack;
