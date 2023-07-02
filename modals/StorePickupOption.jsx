@@ -1,9 +1,10 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import Modal from 'react-native-modal'
 
 const StorePickupOption = ({ visible, onClose }) => {
+  const [modalVisible, setModalVisible] = useState(false);
 
   const navigation = useNavigation();
 
