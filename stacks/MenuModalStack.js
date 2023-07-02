@@ -3,6 +3,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import HomeScreen from "../screens/HomeScreen";
+import MenuModal1 from "../modals/MenuModal1";
+import MenuModal2 from "../modals/MenuModal2";
 
 const MenuModalStack = () => {
   const Stack = createStackNavigator();
