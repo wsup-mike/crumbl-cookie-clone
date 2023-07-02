@@ -9,7 +9,7 @@ const MenuModal1 = () => {
         <SafeAreaView className='flex-1 items-center justify-center'>
             <View>
                 <Text>MenuModal1</Text>
-                <Button title='MenuModal2' onPress={() => {}} />
+                <Button title='MenuModal2' onPress={() => {navigation.navigate('MenuModal2')}} />
             </View>
         </SafeAreaView>
     )
