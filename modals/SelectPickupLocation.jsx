@@ -8,8 +8,8 @@ import StorePickupOption from './StorePickupOption';
 
 
 const SelectPickupLocation = ({ visible, onClose }) => {
-  // const [modalVisible, setModalVisible] = useState(false);
-  const [showStorePickupOption, setShowStorePickupOption] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  
 
 
   const navigation = useNavigation();
