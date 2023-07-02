@@ -7,6 +7,7 @@ const MenuModal1 = () => {
     const navigation = useNavigation()
         
     return (
+        <View className='flex-1'>
         <Animatable.View
             animation='slideInUp'
             style={{ 
@@ -25,6 +26,22 @@ const MenuModal1 = () => {
                 </View>
             </SafeAreaView>
         </Animatable.View>
+
+        <Animatable.View 
+            animation='fadeIn'
+            duration={500}
+            style={{
+                position: 'absolute',
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                transform: [{ scale: 0.9}],
+                borderRadius: 20,
+            }}
+        />
+        </View>
     )
 }
 
