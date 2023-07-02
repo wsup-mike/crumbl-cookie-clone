@@ -10,7 +10,7 @@ const MenuModalStack = () => {
   const Stack = createStackNavigator();
 
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="HomeScreen">
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="MenuModal1" component={MenuModal1} />
       <Stack.Screen name="MenuModal2" component={MenuModal2} />
