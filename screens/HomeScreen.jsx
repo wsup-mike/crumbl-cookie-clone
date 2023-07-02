@@ -28,8 +28,10 @@ const HomeScreen = () => {
         <Modal 
           isVisible={modalVisible}
           onBackdropPress={closeModal}
-          animationIn='slideInUp'
-          animationOut='slideOutDown'
+          onSwipeComplete={() => setModalVisible(false)}
+          swipeDirection='left'
+          // animationIn='slideInUp'
+          // animationOut='slideOutDown'
         >
           <MenuModal1 />
         </Modal>
