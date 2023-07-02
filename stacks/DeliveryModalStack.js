@@ -21,7 +21,7 @@ const DeliveryModalStack = () => {
       <Stack.Screen
         name="NormalScreen"
         component={NormalScreen}
-        options={{ ...horizontalAnimation }}
+        options={{ presentation: "card" }}
       />
       <Stack.Screen
         name="DeliveryModal1"

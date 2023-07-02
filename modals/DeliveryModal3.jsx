@@ -11,7 +11,7 @@ const DeliveryModal3 = () => {
         <View>
             <Text className='text-3xl text-center'>DeliveryModal3</Text>
             <Button title='NormalScreen' onPress={() => {
-              
+              navigation.navigate('NormalScreen')
             }}/>
         </View>
     </SafeAreaView>
