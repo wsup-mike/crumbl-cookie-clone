@@ -8,7 +8,7 @@ const DeliveryModal2 = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
-          <Button title='Next Page' onPress={() => {navigation.navigate('DeliveryModal3')}} />
+          <Button title='Next Page' onPress={() => {navigation.push('DeliveryModal3')}} />
         </View>
     </SafeAreaView>
   )

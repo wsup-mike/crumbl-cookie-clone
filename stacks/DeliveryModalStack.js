@@ -13,11 +13,9 @@ const DeliveryModalStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="WalletScreen"
-      screenOptions={
-        {
-          // presentation: "modal",
-        }
-      }
+      screenOptions={{
+        presentation: "modal",
+      }}
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} options={{}} />
       <Stack.Screen
@@ -28,26 +26,32 @@ const DeliveryModalStack = () => {
       <Stack.Screen
         name="DeliveryModal1"
         component={DeliveryModal1}
-        options={{
-          presentation: "modal",
-          // gestureDirection: "horizontal",
-        }}
+        options={
+          {
+            // presentation: "modal",
+            // gestureDirection: "horizontal",
+          }
+        }
       />
 
       <Stack.Screen
         name="DeliveryModal2"
         component={DeliveryModal2}
-        options={{
-          presentation: "card",
-        }}
+        options={
+          {
+            // presentation: "card",
+          }
+        }
       />
       <Stack.Screen
         name="DeliveryModal3"
         component={DeliveryModal3}
-        options={{
-          // ...horizontalAnimation,
-          presentation: "card",
-        }}
+        options={
+          {
+            // ...horizontalAnimation,
+            // presentation: "card",
+          }
+        }
       />
     </Stack.Navigator>
   );
