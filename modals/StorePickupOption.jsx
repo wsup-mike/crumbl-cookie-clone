@@ -6,6 +6,10 @@ import Modal from 'react-native-modal'
 const StorePickupOption = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
+
+  const openModal = () => {
+    setModalVisible(true)
+  }
   
   // useEffect(() => {
   //   navigation.setOptions({
@@ -23,7 +27,7 @@ const StorePickupOption = ({ visible, onClose }) => {
       isVisible={visible}
       backdropOpacity={0.5}
       onSwipeComplete={onClose}
-      swipeDirection='down'
+      swipeDirection='left'
       style={{ margin: 0, paddingTop: 30 }}
     >
       <SafeAreaView className='flex-1 bg-white rounded-t-3xl items-center justify-center'>
