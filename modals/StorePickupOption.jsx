@@ -7,16 +7,16 @@ const StorePickupOption = ({ visible, onClose }) => {
 
   const navigation = useNavigation();
   
-  useEffect(() => {
-    navigation.setOptions({
-      headerLeft: () => (
-        <Button 
-          title="Back"
-          onPress={() => navigation.goBack()}
-        />
-      )
-    })
-  }, [navigation]);
+  // useEffect(() => {
+  //   navigation.setOptions({
+  //     headerLeft: () => (
+  //       <Button 
+  //         title="Back"
+  //         onPress={() => navigation.goBack()}
+  //       />
+  //     )
+  //   })
+  // }, [navigation]);
 
   return (
     <Modal
