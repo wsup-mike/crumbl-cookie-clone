@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
+import * as Animatable from 'react-native-animatable'
 
 const MenuModal1 = () => {
     const navigation = useNavigation()
