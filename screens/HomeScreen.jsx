@@ -19,7 +19,7 @@ const HomeScreen = () => {
   }
 
   return (
-      <SafeAreaView className='flex-1 items-center justify-center'>
+      <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
         <View>
             <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
             <Button title='Next' onPress={()=> {navigation.navigate('MenuModal1')}}/>
