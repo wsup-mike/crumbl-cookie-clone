@@ -32,16 +32,16 @@ const SelectPickupLocation = ({ visible, onClose }) => {
     >
       <SafeAreaView className='flex-1 bg-white rounded-t-3xl items-center justify-center'>
           {
-            !showStorePickupOption ? (
+            modalVisible ? (
               <View>
                 <Text className='text-3xl text-center'>SelectPickupLocation Modal</Text>
                 <Button 
                   title='StorePickupOption'
-                  onPress={navigateToStorePickupOption}              
+                  onPress={openModal}              
                 /> 
               </View>
             ) : (
-              <StorePickupOption  onClose={handleStorePickupOptionClose} />
+              <StorePickupOption  onClose={closeModal} />
             )
           }
       </SafeAreaView>
