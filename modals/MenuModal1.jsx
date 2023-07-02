@@ -8,7 +8,8 @@ const MenuModal1 = () => {
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
             <View>
-            <Button title='MenuModal2' onPress={() => {}} />
+                <Text>MenuModal1</Text>
+                <Button title='MenuModal2' onPress={() => {}} />
             </View>
         </SafeAreaView>
     )
