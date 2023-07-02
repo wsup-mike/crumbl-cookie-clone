@@ -5,12 +5,12 @@ import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
-  
+
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
             <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
-            <Button title='MenuModal1' onPress={()=> {}}/>
+            <Button title='MenuModal1' onPress={()=> {navigation.navigate('MenuModal2')}}/>
         </View>
     </SafeAreaView>
   )
