@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
+import Modal from 'react-native-modal'
 
 
 const MenuModal1 = () => {
