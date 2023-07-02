@@ -29,7 +29,7 @@ const RootNavigator = () => {
       // })}
       screenOptions={{ headerShown: false }}
     >
-      <Tab.Screen name="Menu" component={HomeScreen} />
+      <Tab.Screen name="Menu" component={MenuModalStack} />
       <Tab.Screen name="Order" component={OrderStack} />
       <Tab.Screen name="Wallet" component={DeliveryModalStack} />
       <Tab.Screen name="Gifts" component={GiftCardScreen} />
