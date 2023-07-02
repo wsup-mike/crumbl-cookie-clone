@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView } from 'react-native'
+import { View, Text, SafeAreaView, Button } from 'react-native'
 import React from 'react'
 
 const DeliveryModal3 = () => {
@@ -6,6 +6,7 @@ const DeliveryModal3 = () => {
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
             <Text className='text-3xl text-center'>DeliveryModal3</Text>
+
         </View>
     </SafeAreaView>
   )
