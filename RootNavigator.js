@@ -10,6 +10,7 @@ import GiftCardScreen from "./screens/GiftCardScreen";
 import AccountScreen from "./screens/AccountScreen";
 import OrderStack from "./stacks/OrderStack";
 import DeliveryModalStack from "./stacks/DeliveryModalStack";
+import MenuModalStack from "./stacks/MenuModalStack";
 
 const Tab = createBottomTabNavigator();
 
