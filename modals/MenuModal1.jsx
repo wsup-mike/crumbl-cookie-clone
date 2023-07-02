@@ -5,24 +5,23 @@ import Modal from 'react-native-modal'
 
 
 const MenuModal1 = () => {
-    const [modalVisible, setModalVisible] = useState(false);
 
     const navigation = useNavigation()
 
-    const openModal = () => {
-        setModalVisible(true)
+    const nextModal = () => {
+        navigation.navigate('MenuModal2')
     }
 
     const closeModal = () => {
-        setModalVisible(false)
+        navigation.goBack();
     }
         
     return (
-
         <SafeAreaView className='flex-1 items-center justify-center'>
             <View>
                 <Text>MenuModal1</Text>
-                <Button title='Next Again!' onPress={() => {navigation.navigate('MenuModal2')}} />
+                <Button title='Close' onPress={closeModal} />
+                <Button title='Next Again!' onPress={nextModal} />
             </View>
         </SafeAreaView>
     )
