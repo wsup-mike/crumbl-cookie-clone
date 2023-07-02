@@ -9,25 +9,17 @@ import StorePickupOption from './StorePickupOption';
 
 const SelectPickupLocation = ({ visible, onClose }) => {
   const [modalVisible, setModalVisible] = useState(false);
-  
-
 
   const navigation = useNavigation();
 
-  
-
   const openModal = () => {
-    setModalVisible(visible);
+    setModalVisible(true);
   };
 
   const closeModal = () => {
-    setShowStorePickupOption(false);
+    setModalVisible(false)
     onClose();
   };
-
-  const handleStorePickupOptionClose = () => {
-    setShowStorePickupOption(false)
-  }
   
   return (
     <Modal
