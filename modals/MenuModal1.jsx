@@ -5,6 +5,10 @@ import * as Animatable from 'react-native-animatable'
 
 const MenuModal1 = () => {
     const navigation = useNavigation()
+
+    const closeModal = () => {
+        navigation.goBack();
+    }
         
     return (
         <View className='flex-1'>
@@ -27,20 +31,7 @@ const MenuModal1 = () => {
             </SafeAreaView>
         </Animatable.View>
 
-        <Animatable.View 
-            animation='fadeIn'
-            duration={500}
-            style={{
-                position: 'absolute',
-                top: 0,
-                bottom: 0,
-                left: 0,
-                right: 0,
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                transform: [{ scale: 0.9}],
-                borderRadius: 20,
-            }}
-        />
+        
         </View>
     )
 }
