@@ -2,18 +2,11 @@ import { View, Text, SafeAreaView, Button } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import StorePickupOrderingStack from '../stacks/StorePickupOrderingStack'
+import DeliveryOrderingStack from '../stacks/DeliveryOrderingStack'
 
 const OrderScreen = () => {
   
   const navigation = useNavigation();
-  
-  // const openModal = () => {
-  //   setModalVisible(true)
-  // }
-
-  // const closeModal = () => {
-  //   setModalVisible(false)
-  // }
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
@@ -22,6 +15,7 @@ const OrderScreen = () => {
             <Button
               title='DeliveryOrderingStack' 
               onPress={() => {
+                navigation.navigate('DeliveryOrderingStack')
               }}
             />
              
