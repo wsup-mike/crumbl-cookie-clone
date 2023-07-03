@@ -40,6 +40,7 @@ const StorePickupOrderingStack = () => {
       <Stack.Screen
         name="CarryoutOrderingStack"
         component={CarryoutOrderingStack}
+        options={{ presentation: "card" }}
       />
       <Stack.Screen
         name="CurbsideOrderingStack"
