@@ -6,11 +6,7 @@ import YourAddresses from "../modals/YourAddresses";
 const Stack = createStackNavigator();
 
 const DeliveryOrderingStack = () => {
-  return (
-    <View>
-      <Text>DeliveryOrderingStack</Text>
-    </View>
-  );
+  return <Stack.Navigator></Stack.Navigator>;
 };
 
 export default DeliveryOrderingStack;
