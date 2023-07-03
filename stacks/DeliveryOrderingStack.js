@@ -6,7 +6,17 @@ import YourAddresses from "../modals/YourAddresses";
 const Stack = createStackNavigator();
 
 const DeliveryOrderingStack = () => {
-  return <Stack.Navigator></Stack.Navigator>;
+  return (
+    <Stack.Navigator
+      initialRouteName="YourAddresses"
+      screenOptions={{
+        headerShown: false,
+        presentation: "modal",
+      }}
+    >
+      <Stack.Screen name="YourAddresses" component={YourAddresses} />
+    </Stack.Navigator>
+  );
 };
 
 export default DeliveryOrderingStack;
