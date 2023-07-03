@@ -14,6 +14,7 @@ const StorePickupOrderingStack = () => {
       initialRouteName="SelectPickupLocation"
       screenOptions={{
         headerShown: false,
+        // presentation: "modal",
       }}
     >
       <Stack.Screen
@@ -21,7 +22,7 @@ const StorePickupOrderingStack = () => {
         component={SelectPickupLocation}
         options={{
           headerShown: false, // Hide header
-          presentation: "modal",
+          // presentation: "modal",
         }}
       />
       <Stack.Screen
