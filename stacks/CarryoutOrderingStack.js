@@ -29,10 +29,11 @@ const Stack = createStackNavigator();
 
 const CarryoutOrderingStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{}}>
       <Stack.Screen
         name="CarryoutOrderScreen"
         component={CarryoutOrderScreen}
+        options={{}}
       />
       <Stack.Screen
         name="SelectPickupLocation"
