@@ -3,6 +3,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import YourAddresses from "../modals/YourAddresses";
 
+const Stack = createStackNavigator();
+
 const DeliveryOrderingStack = () => {
   return (
     <View>
