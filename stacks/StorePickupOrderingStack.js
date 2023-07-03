@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  createStackNavigator,
-  TransitionPresets,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import SelectPickupLocation from "../modals/SelectPickupLocation";
 import StorePickupOption from "../modals/StorePickupOption";
 import CarryoutOrderingStack from "./CarryoutOrderingStack";
@@ -17,10 +14,10 @@ const StorePickupOrderingStack = () => {
       initialRouteName="SelectPickupLocation"
       screenOptions={{
         headerShown: false,
-        gestureEnabled: true,
-        gestureDirection: "horizontal",
-        animationTypeForReplace: "push",
-        ...TransitionPresets.SlideFromRightIOS,
+        presentation: "modal",
+        // gestureEnabled: true,
+        // gestureDirection: "horizontal",
+        // animationTypeForReplace: "push",
         // headerTransparent: true,
         // headerStyle: { backgroundColor: "transparent" },
         // cardStyle: { backgroundColor: "white" },
