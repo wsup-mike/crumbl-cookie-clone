@@ -22,7 +22,6 @@ const DeliveryOrderingStack = () => {
         // options={{ presentation: "modal" }}
       />
       <Stack.Screen name="CreateNewAddress" component={CreateNewAddress} />
-      <Stack.Screen name="DeliveryModalStack" component={DeliveryModalStack} />
     </Stack.Navigator>
   );
 };
