@@ -1,19 +1,19 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
-import SelectPickupLocation from '../modals/SelectPickupLocation'
+import StorePickupOrderingStack from '../stacks/StorePickupOrderingStack'
 
 const OrderScreen = () => {
-  const [modalVisible, setModalVisible] = useState(false);
+  
   const navigation = useNavigation();
   
-  const openModal = () => {
-    setModalVisible(true)
-  }
+  // const openModal = () => {
+  //   setModalVisible(true)
+  // }
 
-  const closeModal = () => {
-    setModalVisible(false)
-  }
+  // const closeModal = () => {
+  //   setModalVisible(false)
+  // }
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
@@ -28,7 +28,9 @@ const OrderScreen = () => {
             
             <Button 
               title='StorePickupOrderingStack' 
-              onPress={openModal}
+              onPress={() => {
+                navigation.navigate('StorePickupOrderingStack')
+              }}
             />
           
             
@@ -50,7 +52,6 @@ const OrderScreen = () => {
             />
    
         </View>
-        {modalVisible && <SelectPickupLocation visible={modalVisible} onClose={closeModal} />}
 
     </SafeAreaView>
   )

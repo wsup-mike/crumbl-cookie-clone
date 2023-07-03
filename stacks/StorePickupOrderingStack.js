@@ -14,13 +14,6 @@ const StorePickupOrderingStack = () => {
       initialRouteName="SelectPickupLocation"
       screenOptions={{
         headerShown: false,
-        presentation: "modal",
-        // gestureEnabled: true,
-        // gestureDirection: "horizontal",
-        // animationTypeForReplace: "push",
-        // headerTransparent: true,
-        // headerStyle: { backgroundColor: "transparent" },
-        // cardStyle: { backgroundColor: "white" },
       }}
     >
       <Stack.Screen
@@ -35,9 +28,6 @@ const StorePickupOrderingStack = () => {
         component={StorePickupOption}
         options={{
           headerShown: false,
-          gestureEnabled: true,
-          gestureDirection: "horizontal",
-          animationTypeForReplace: "push",
         }}
       />
       <Stack.Screen

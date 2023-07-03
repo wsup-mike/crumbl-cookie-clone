@@ -6,7 +6,6 @@ import DeliveryOrderingStack from "./DeliveryOrderingStack";
 import CateringPickupOrderingStack from "./CateringPickupOrderingStack";
 import ShippingOrderingStack from "./ShippingOrderingStack";
 import SubscriptionOrderingStack from "./SubscriptionOrderingStack";
-import SelectPickupLocation from "../modals/SelectPickupLocation";
 
 const Stack = createStackNavigator();
 
@@ -16,8 +15,7 @@ const OrderStack = () => {
       initialRouteName="OrderScreen"
       screenOptions={{
         headerShown: false,
-        gestureEnabled: true,
-        gestureDirection: "horizontal",
+        presentation: "modal",
       }}
     >
       <Stack.Screen name="OrderScreen" component={OrderScreen} options={{}} />
