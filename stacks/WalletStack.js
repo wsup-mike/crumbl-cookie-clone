@@ -14,14 +14,14 @@ const WalletStack = () => {
         presentation: "modal",
       }}
     >
-      <Stack.Screen name="WalletScreen" component={W} options={{}} />
+      <Stack.Screen name="WalletScreen" component={WalletScreen} options={{}} />
+      {/* <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
+      <Stack.Screen name="" component={{}} options={{}} /> */}
     </Stack.Navigator>
   );
 };
