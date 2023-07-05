@@ -5,7 +5,15 @@ import { createStackNavigator } from "@react-navigation/stack";
 const WalletStack = () => {
   const Stack = createStackNavigator();
 
-  return <Stack.Navigator></Stack.Navigator>;
+  return ( 
+    <Stack.Navigator 
+        initialRouteName="WalletScreen"
+        screenOptions={{
+            presentation: 'modal',
+        }}
+    >
+        <Stack.Screen name="" component={} options={{ }}/>
+    </Stack.Navigator>
 };
 
 export default WalletStack;
