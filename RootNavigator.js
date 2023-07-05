@@ -9,7 +9,7 @@ import WalletScreen from "./screens/WalletScreen";
 import GiftCardScreen from "./screens/GiftCardScreen";
 import AccountScreen from "./screens/AccountScreen";
 import OrderStack from "./stacks/OrderStack";
-import DeliveryModalStack from "./stacks/DeliveryModalStack";
+// import DeliveryModalStack from "./stacks/DeliveryModalStack";
 import MenuModalStack from "./stacks/MenuModalStack";
 import WalletStack from "./stacks/WalletStack";
 
