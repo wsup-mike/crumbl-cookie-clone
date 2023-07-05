@@ -26,10 +26,12 @@ const DeliveryModalStack = () => {
       <Stack.Screen
         name="DeliveryModal1"
         component={DeliveryModal1}
-        options={{
-          presentation: "card",
-          // gestureDirection: "horizontal",
-        }}
+        options={
+          {
+            // presentation: "card",
+            // gestureDirection: "horizontal",
+          }
+        }
       />
 
       <Stack.Screen
