@@ -11,6 +11,7 @@ import AccountScreen from "./screens/AccountScreen";
 import OrderStack from "./stacks/OrderStack";
 import DeliveryModalStack from "./stacks/DeliveryModalStack";
 import MenuModalStack from "./stacks/MenuModalStack";
+import WalletStack from "./stacks/WalletStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +32,7 @@ const RootNavigator = () => {
     >
       <Tab.Screen name="Menu" component={MenuModalStack} />
       <Tab.Screen name="Order" component={OrderStack} />
-      <Tab.Screen name="Wallet" component={DeliveryModalStack} />
+      <Tab.Screen name="Wallet" component={WalletStack} />
       <Tab.Screen name="Gifts" component={GiftCardScreen} />
       <Tab.Screen name="More" component={AccountScreen} />
     </Tab.Navigator>
