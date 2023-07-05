@@ -5,11 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 const WalletStack = () => {
   const Stack = createStackNavigator();
 
-  return (
-    <View>
-      <Text>WalletStack</Text>
-    </View>
-  );
+  return <Stack.Navigator></Stack.Navigator>;
 };
 
 export default WalletStack;
