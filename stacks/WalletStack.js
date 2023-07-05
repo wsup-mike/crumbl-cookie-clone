@@ -1,6 +1,8 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
+import LoyaltyFAQ from "../modals/walletModals/LoyaltyFAQ";
+import CrumblCash from "../modals/walletModals/CrumblCash";
 
 import WalletScreen from "../screens/WalletScreen";
 
@@ -15,8 +17,14 @@ const WalletStack = () => {
       }}
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} options={{}} />
+      <Stack.Screen
+        name="LoyaltyFAQ"
+        component={LoyaltyFAQ}
+        options={{
+          presentation: "card",
+        }}
+      />
       {/* <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
       <Stack.Screen name="" component={{}} options={{}} />
