@@ -1,5 +1,6 @@
 import { View, Text, Button, SafeAreaView } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 
 const GiftCardSelectedScreen = () => {
   return (
@@ -7,7 +8,7 @@ const GiftCardSelectedScreen = () => {
         <View>
             <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
             <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-            {/* <Button title='' onPress={() => navigation.navigate('')} /> */}
+            <Button title='' onPress={() => navigation.navigate('')} />
         </View>
     </SafeAreaView>
   )
