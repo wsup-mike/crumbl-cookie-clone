@@ -11,7 +11,7 @@ const EarnFreeCrumbsScreen = () => {
                 <Text className='text-3xl text-center'>Earn Free Crumbs!</Text>
                 <Button title='Refer a friend' onPress={() => navigation.navigate('ReferFriend')}/>
                 <Button title='Join birthday club' onPress={() => navigation.navigate('BirthdayClub')}/>
-                
+                <Button title='Sign up for deals' onPress={() => navigation.navigate('SignUpDeals')} />
             </View>
         </SafeAreaView>
   )
