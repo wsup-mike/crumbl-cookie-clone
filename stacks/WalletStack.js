@@ -6,6 +6,7 @@ import CrumblCash from "../modals/walletModals/CrumblCash";
 import EarnFreeCrumbsScreen from "../screens/walletscreens/EarnFreeCrumbsScreen";
 import AddPromoCode from "../modals/walletModals/AddPromoCode";
 import ReferFriend from "../modals/walletModals/ReferFriend";
+import BirthdayClub from "../modals/walletModals/BirthdayClub";
 
 import WalletScreen from "../screens/WalletScreen";
 
@@ -28,6 +29,7 @@ const WalletStack = () => {
         options={{ presentation: "card" }}
       />
       <Stack.Screen name="ReferFriend" component={ReferFriend} />
+      <Stack.Screen name="BirthdayClub" component={BirthdayClub} />
       <Stack.Screen name="AddPromoCode" component={AddPromoCode} options={{}} />
     </Stack.Navigator>
   );
