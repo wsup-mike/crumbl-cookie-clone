@@ -8,6 +8,16 @@ import AddPromoCode from "../modals/walletModals/AddPromoCode";
 import ReferFriend from "../modals/walletModals/ReferFriend";
 import BirthdayClub from "../modals/walletModals/BirthdayClub";
 import SignUpDeals from "../modals/walletModals/SignUpDeals";
+import FacebookFollow from "../modals/walletModals/FacebookFollow";
+import GoogleReview from "../modals/walletModals/GoogleReview";
+import LinkedInFollow from "../modals/walletModals/LinkedInFollow";
+import PinterestFollow from "../modals/walletModals/PinterestFollow";
+import TikTokFollow from "../modals/walletModals/TikTokFollow";
+import TwitterFollow from "../modals/walletModals/TwitterFollow";
+import YouTubeFollow from "../modals/walletModals/YouTubeFollow";
+import RateApp from "../modals/walletModals/RateApp";
+import FacebookReview from "../modals/walletModals/FacebookReview";
+import InstagramFollow from "../modals/walletModals/InstagramFollow";
 
 import WalletScreen from "../screens/WalletScreen";
 
