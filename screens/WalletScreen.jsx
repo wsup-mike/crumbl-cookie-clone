@@ -1,9 +1,6 @@
 import { View, Text, SafeAreaView, Button} from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import LoyaltyFAQ from '../modals/walletModals/LoyaltyFAQ'
-import CrumblCash from '../modals/walletModals/CrumblCash'
-import AddPromoCode from '../modals/walletModals/AddPromoCode'
 
 const WalletScreen = () => {
   const navigation = useNavigation();
