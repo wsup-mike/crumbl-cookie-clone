@@ -10,6 +10,7 @@ const LoyaltyFAQ = () => {
         <SafeAreaView className='flex-1 items-center justify-center'>
             <View>
                 <Text className='text-3xl text-center'>Loyalty FAQ modal</Text>
+                <Text className='text-2xl text-center'>How does Crumbl Loyalty work?</Text>
                 <Button title='' onPress={() => navigation.navigate('')}/>
             </View>
         </SafeAreaView>
