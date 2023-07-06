@@ -24,7 +24,7 @@ const WalletStack = () => {
       <Stack.Screen
         name="EarnFreeCrumbs"
         component={EarnFreeCrumbsScreen}
-        options={{}}
+        options={{ presentation: "card" }}
       />
       <Stack.Screen name="AddPromoCode" component={AddPromoCode} options={{}} />
     </Stack.Navigator>
