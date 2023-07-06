@@ -18,12 +18,7 @@ const WalletStack = () => {
     >
       <Stack.Screen name="WalletScreen" component={WalletScreen} options={{}} />
       <Stack.Screen name="LoyaltyFAQ" component={LoyaltyFAQ} options={{}} />
-      {/* <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} />
-      <Stack.Screen name="" component={{}} options={{}} /> */}
+      <Stack.Screen name="CrumblCash" component={CrumblCash} options={{}} />
     </Stack.Navigator>
   );
 };

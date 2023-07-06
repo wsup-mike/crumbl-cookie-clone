@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, Button} from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import LoyaltyFAQ from '../modals/walletModals/LoyaltyFAQ'
+import CrumblCash from '../modals/walletModals/CrumblCash'
 
 const WalletScreen = () => {
   const navigation = useNavigation();
@@ -11,6 +12,7 @@ const WalletScreen = () => {
         <View>
             <Text className='text-3xl text-center'>Wallet Screen:Loyalty Crumbl Cash</Text>
             <Button title='Loyalty FAQ' onPress={() => navigation.navigate('LoyaltyFAQ')}/>
+            <Button title='Crumbl Cash' onPress={() => navigation.navigate('CrumblCash')} />
             
         </View>
     </SafeAreaView>

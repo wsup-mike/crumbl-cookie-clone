@@ -6,12 +6,15 @@ const CrumblCash = () => {
 
     const navigation = useNavigation();
 
-    <SafeAreaView className='flex-1 items-center justify-center'>
-        <View>
-            <Text className='text-3xl text-center'>Crumbl Cash modal</Text>
-            <Button title='' onPress={() => navigation.navigate('')} />
-        </View>
-    </SafeAreaView>
+    return (
+
+        <SafeAreaView className='flex-1 items-center justify-center'>
+            <View>
+                <Text className='text-3xl text-center'>Crumbl Cash modal</Text>
+                <Button title='' onPress={() => navigation.navigate('')} />
+            </View>
+        </SafeAreaView>
+    )
 }
 
 export default CrumblCash
