@@ -6,12 +6,11 @@ const EarnFreeCrumbsScreen = () => {
     const navigation = useNavigation();
 
     return (
-        <SafeAreaView className='flex-1 items-center justify-center bg-purple-200'>
+        <SafeAreaView className='flex-1 items-center justify-center'>
             <View>
                 <Text className='text-3xl text-center'>Earn Free Crumbs!</Text>
-                {/* <Button title='Loyalty FAQ' onPress={() => navigation.navigate('LoyaltyFAQ')}/>
-                <Button title='Crumbl Cash' onPress={() => navigation.navigate('CrumblCash')} />
-                <Button title='AddPromoCode' onPress={() => navigation.navigate('AddPromoCode')}/> */}
+                <Button title='Refer a friend!' onPress={() => navigation.navigate('ReferFriend')}/>
+                
             </View>
         </SafeAreaView>
   )
