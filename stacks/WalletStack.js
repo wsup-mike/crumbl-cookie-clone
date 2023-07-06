@@ -42,6 +42,16 @@ const WalletStack = () => {
       <Stack.Screen name="ReferFriend" component={ReferFriend} />
       <Stack.Screen name="BirthdayClub" component={BirthdayClub} />
       <Stack.Screen name="SignUpDeals" component={SignUpDeals} />
+      <Stack.Screen name="FacebookReview" component={FacebookReview} />
+      <Stack.Screen name="GoogleReview" component={GoogleReview} />
+      <Stack.Screen name="LinkedInFollow" component={LinkedInFollow} />
+      <Stack.Screen name="PinterestFollow" component={PinterestFollow} />
+      <Stack.Screen name="TikTokFollow" component={TikTokFollow} />
+      <Stack.Screen name="TwitterFollow" component={TwitterFollow} />
+      <Stack.Screen name="YouTubeFollow" component={YouTubeFollow} />
+      <Stack.Screen name="RateApp" component={RateApp} />
+      <Stack.Screen name="FacebookFollow" component={FacebookFollow} />
+      <Stack.Screen name="InstagramFollow" component={InstagramFollow} />
       <Stack.Screen name="AddPromoCode" component={AddPromoCode} options={{}} />
     </Stack.Navigator>
   );
