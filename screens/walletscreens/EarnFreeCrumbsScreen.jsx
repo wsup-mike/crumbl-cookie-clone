@@ -9,7 +9,8 @@ const EarnFreeCrumbsScreen = () => {
         <SafeAreaView className='flex-1 items-center justify-center'>
             <View>
                 <Text className='text-3xl text-center'>Earn Free Crumbs!</Text>
-                <Button title='Refer a friend!' onPress={() => navigation.navigate('ReferFriend')}/>
+                <Button title='Refer a friend' onPress={() => navigation.navigate('ReferFriend')}/>
+                <Button title='Join birthday club' onPress={() => navigation.navigate('BirthdayClub')}/>
                 
             </View>
         </SafeAreaView>
