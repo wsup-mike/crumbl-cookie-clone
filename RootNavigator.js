@@ -6,7 +6,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./screens/HomeScreen";
 // import OrderScreen from "./screens/OrderScreen";
 import WalletScreen from "./screens/WalletScreen";
-import GiftCardScreen from "./screens/GiftCardScreen";
+// import GiftCardScreen from "./screens/GiftCardScreen";
+import GiftCardStack from "./stacks/GiftCardStack";
 import AccountScreen from "./screens/AccountScreen";
 import OrderStack from "./stacks/OrderStack";
 // import DeliveryModalStack from "./stacks/DeliveryModalStack";
@@ -33,7 +34,7 @@ const RootNavigator = () => {
       <Tab.Screen name="Menu" component={MenuModalStack} />
       <Tab.Screen name="Order" component={OrderStack} />
       <Tab.Screen name="Wallet" component={WalletStack} />
-      <Tab.Screen name="Gifts" component={GiftCardScreen} />
+      <Tab.Screen name="Gifts" component={GiftCardStack} />
       <Tab.Screen name="More" component={AccountScreen} />
     </Tab.Navigator>
   );
