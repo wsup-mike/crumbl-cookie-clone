@@ -11,7 +11,7 @@ const WalletScreen = () => {
             <Text className='text-3xl text-center'>Wallet Screen:Loyalty Crumbl Cash</Text>
             <Button title='Loyalty FAQ' onPress={() => navigation.navigate('LoyaltyFAQ')}/>
             <Button title='Crumbl Cash' onPress={() => navigation.navigate('CrumblCash')} />
-            <Button title='Crumbl Cash' onPress={() => navigation.navigate('')} />
+            <Button title='Earn Free Crumbs' onPress={() => navigation.navigate('EarnFreeCrumbs')} />
             <Button title='AddPromoCode' onPress={() => navigation.navigate('AddPromoCode')}/>
         </View>
     </SafeAreaView>
