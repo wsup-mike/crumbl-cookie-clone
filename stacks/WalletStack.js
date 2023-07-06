@@ -3,6 +3,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoyaltyFAQ from "../modals/walletModals/LoyaltyFAQ";
 import CrumblCash from "../modals/walletModals/CrumblCash";
+import AddPromoCode from "../modals/walletModals/AddPromoCode";
 
 import WalletScreen from "../screens/WalletScreen";
 
@@ -19,6 +20,7 @@ const WalletStack = () => {
       <Stack.Screen name="WalletScreen" component={WalletScreen} options={{}} />
       <Stack.Screen name="LoyaltyFAQ" component={LoyaltyFAQ} options={{}} />
       <Stack.Screen name="CrumblCash" component={CrumblCash} options={{}} />
+      <Stack.Screen name="AddPromoCode" component={AddPromoCode} options={{}} />
     </Stack.Navigator>
   );
 };
