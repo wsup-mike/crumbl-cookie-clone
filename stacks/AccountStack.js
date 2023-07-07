@@ -6,6 +6,7 @@ import CookieJournalScreen from "../screens/accountscreens/CookieJournalScreen";
 import AllergyNutrition from "../modals/AllergyNutrition";
 import UseGiftCardVoucher from "../modals/UseGiftCardVoucher";
 import StoreLocationsMapScreen from "../screens/accountscreens/StoreLocationsMapScreen";
+import PurchaseOrderHistoryScreen from "../modals/accountModals/PurchaseOrderHistoryScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -28,6 +29,11 @@ const AccountStack = () => {
       <Stack.Screen
         name="StoreLocationsMapScreen"
         component={StoreLocationsMapScreen}
+        options={{ presentation: "card" }}
+      />
+      <Stack.Screen
+        name="PurchaseOrderHistoryScreen"
+        component={PurchaseOrderHistoryScreen}
         options={{ presentation: "card" }}
       />
     </Stack.Navigator>
