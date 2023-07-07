@@ -12,6 +12,7 @@ import ReviewGiftCardOrder from '../modals/giftcardModals/ReviewGiftCardOrder'
 import GiftCardPlaceOrder from '../modals/giftcardModals/GiftCardPlaceOrder'
 import PriceBreakdown from '../modals/PriceBreakdown'
 import PaymentMethodScreen from '../screens/orderscreens/PaymentMethodScreen'
+import AddCardScreen from '../screens/orderscreens/PaymentMethodScreen'
 
 
 const GiftCardStack = () => {
@@ -34,7 +35,8 @@ const GiftCardStack = () => {
             <Stack.Screen name='ReviewGiftCardOrder' component={ReviewGiftCardOrder} />
             <Stack.Screen name='GiftCardPlaceOrder' component={GiftCardPlaceOrder} />
             <Stack.Screen name='PriceBreakdown' component={PriceBreakdown} />
-            <Stack.Screen name='PaymentMethod' component={PaymentMethodScreen} />
+            <Stack.Screen name='PaymentMethodScreen' component={PaymentMethodScreen} />
+            <Stack.Screen name='AddCardScreen' component={AddCardScreen} />
         </Stack.Navigator>
     )
 }
