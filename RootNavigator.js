@@ -8,7 +8,8 @@ import HomeScreen from "./screens/HomeScreen";
 import WalletScreen from "./screens/WalletScreen";
 // import GiftCardScreen from "./screens/GiftCardScreen";
 import GiftCardStack from "./stacks/GiftCardStack";
-import AccountScreen from "./screens/AccountScreen";
+// import AccountScreen from "./screens/AccountScreen";
+import AccountStack from "./stacks/AccountStack";
 import OrderStack from "./stacks/OrderStack";
 // import DeliveryModalStack from "./stacks/DeliveryModalStack";
 import MenuModalStack from "./stacks/MenuModalStack";
@@ -35,7 +36,7 @@ const RootNavigator = () => {
       <Tab.Screen name="Order" component={OrderStack} />
       <Tab.Screen name="Wallet" component={WalletStack} />
       <Tab.Screen name="Gifts" component={GiftCardStack} />
-      <Tab.Screen name="More" component={AccountScreen} />
+      <Tab.Screen name="More" component={AccountStack} />
     </Tab.Navigator>
   );
 };
