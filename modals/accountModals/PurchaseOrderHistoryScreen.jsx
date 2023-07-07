@@ -11,6 +11,7 @@ const PurchaseOrderHistoryScreen = () => {
             <Text className='text-3xl text-center'>PurchaseOrderHistoryScreen screen</Text>
             <Text className='text-2xl text-center'>A list of all user purchases ever made</Text>
             <Button title='OrderScreen - To place an order!' onPress={() => navigation.navigate('OrderScreen')}/>
+            <Button title='Mock History Order #1' onPress={() => navigation.navigate('IndividualOrderReceiptScreen')}/>
         </View>
     </SafeAreaView>
   )
