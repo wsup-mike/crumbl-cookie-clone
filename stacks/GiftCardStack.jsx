@@ -14,6 +14,7 @@ import PriceBreakdown from '../modals/PriceBreakdown'
 import PaymentMethodScreen from '../screens/orderscreens/PaymentMethodScreen'
 import AddCardScreen from '../screens/orderscreens/PaymentMethodScreen'
 import OrderIsProcessingScreen from '../screens/orderscreens/OrderIsProcessingScreen'
+import OrderSuccessScreen from '../screens/orderscreens/OrderSuccessScreen'
 
 
 const GiftCardStack = () => {
@@ -38,7 +39,8 @@ const GiftCardStack = () => {
             <Stack.Screen name='PriceBreakdown' component={PriceBreakdown} />
             <Stack.Screen name='PaymentMethodScreen' component={PaymentMethodScreen} />
             <Stack.Screen name='AddCardScreen' component={AddCardScreen} />
-            <Stack.Screen name='OrderIsProcessing' component={OrderIsProcessingScreen} />
+            <Stack.Screen name='OrderIsProcessingScreen' component={OrderIsProcessingScreen} />
+            <Stack.Screen name='OrderSuccessScreen' component={OrderSuccessScreen} />
         </Stack.Navigator>
     )
 }
