@@ -9,7 +9,7 @@ const OrderScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView className='flex-1 items-center justify-center'>
+    <SafeAreaView className='flex-1 items-center justify-center bg-teal-300'>
         <View>
             <Text className='text-3xl text-center'>ORDER SCREEN:5 Options to Order</Text>
             <Button
