@@ -16,6 +16,7 @@ import AddCardScreen from '../screens/orderscreens/PaymentMethodScreen'
 import OrderIsProcessingScreen from '../screens/orderscreens/OrderIsProcessingScreen'
 import OrderSuccessScreen from '../screens/orderscreens/OrderSuccessScreen'
 import FinalGiftCardOrderConfirmation from '../modals/giftcardModals/FinalGiftCardOrderConfirmation'
+import ReasonForCancellation from '../modals/ReasonForCancellation'
 
 
 const GiftCardStack = () => {
@@ -43,6 +44,7 @@ const GiftCardStack = () => {
             <Stack.Screen name='OrderIsProcessingScreen' component={OrderIsProcessingScreen} />
             <Stack.Screen name='OrderSuccessScreen' component={OrderSuccessScreen} />
             <Stack.Screen name='FinalGiftCardOrderConfirmation' component={FinalGiftCardOrderConfirmation} />
+            <Stack.Screen name='ReasonForCancellation' component={ReasonForCancellation} />
 
         </Stack.Navigator>
     )
