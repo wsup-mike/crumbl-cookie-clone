@@ -13,6 +13,7 @@ const GiftCardSelectedScreen = () => {
                 <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
                 <Button title='Select Gift Card Send Date' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
                 <Button title='Select Gift Card Send Time' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
+                <Button title='Choose "FROM"' onPress={() => navigation.navigate('SendGiftCardFrom')} />
             </View>
         </SafeAreaView>
     )
