@@ -78,6 +78,7 @@ const AccountStack = () => {
       <Stack.Screen
         name="PaymentMethodScreen"
         component={PaymentMethodScreen}
+        options={{ presentation: "card" }}
       />
     </Stack.Navigator>
   );
