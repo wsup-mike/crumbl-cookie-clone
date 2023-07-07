@@ -8,6 +8,7 @@ import SelectGiftCardSendTime from '../modals/giftcardModals/SelectGiftCardSendT
 import SendGiftCardFrom from '../modals/giftcardModals/SendGiftCardFrom'
 import AddGiftCardRecipients from '../modals/giftcardModals/AddGiftCardRecipients'
 import AddGiftCardTextMessage from '../modals/giftcardModals/AddGiftCardTextMessage'
+import ReviewGiftCardOrder from '../modals/giftcardModals/ReviewGiftCardOrder'
 
 
 const GiftCardStack = () => {
@@ -27,6 +28,7 @@ const GiftCardStack = () => {
             <Stack.Screen name='SendGiftCardFrom' component={SendGiftCardFrom} />
             <Stack.Screen name='AddGiftCardRecipients' component={AddGiftCardRecipients} />
             <Stack.Screen name='AddGiftCardTextMessage' component={AddGiftCardTextMessage} />
+            <Stack.Screen name='ReviewGiftCardOrder' component={ReviewGiftCardOrder} />
         </Stack.Navigator>
     )
 }
