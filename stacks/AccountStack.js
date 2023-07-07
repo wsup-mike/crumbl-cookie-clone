@@ -37,7 +37,11 @@ const AccountStack = () => {
         component={PurchaseOrderHistoryScreen}
         options={{ presentation: "card" }}
       />
-      <Stack.Screen name="OrderScreen" component={OrderScreen} />
+      <Stack.Screen
+        name="OrderScreen"
+        component={OrderScreen}
+        options={{ presentation: "card" }}
+      />
     </Stack.Navigator>
   );
 };
