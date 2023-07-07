@@ -18,6 +18,7 @@ const AccountStack = () => {
       <Stack.Screen
         name="CookieJournalScreen"
         component={CookieJournalScreen}
+        options={{ presentation: "card" }}
       />
     </Stack.Navigator>
   );
