@@ -11,6 +11,7 @@ const AddressesScreen = () => {
                 <Text className='text-3xl text-center'>AddressesScreen screen</Text>
                 <Text className='text-2xl text-center'>All user addresses on file</Text>
                 <Button title='CreateNewAddress'  onPress={() => navigation.navigate('CreateNewAddress')} />
+                <Button title='Go to "Confirm Address" modal'  onPress={() => navigation.navigate('ConfirmAddress')} />
             </View>
         </SafeAreaView>
     )
