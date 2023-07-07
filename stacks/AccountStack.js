@@ -9,6 +9,7 @@ import StoreLocationsMapScreen from "../screens/accountscreens/StoreLocationsMap
 import PurchaseOrderHistoryScreen from "../modals/accountModals/PurchaseOrderHistoryScreen";
 import OrderScreen from "../screens/OrderScreen";
 import IndividualOrderReceiptScreen from "../screens/accountscreens/IndividualOrderReceiptScreen";
+import ManageSubscriptionsScreen from "../screens/accountscreens/ManageSubscriptionsScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -46,6 +47,11 @@ const AccountStack = () => {
       <Stack.Screen
         name="IndividualOrderReceiptScreen"
         component={IndividualOrderReceiptScreen}
+        options={{ presentation: "card" }}
+      />
+      <Stack.Screen
+        name="ManageSubscriptionsScreen"
+        component={ManageSubscriptionsScreen}
         options={{ presentation: "card" }}
       />
     </Stack.Navigator>
