@@ -16,6 +16,7 @@ const GiftCardSelectedScreen = () => {
                 <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
                 <Button title='AddGiftCardRecipients' onPress={() => navigation.navigate('AddGiftCardRecipients')} />
                 <Button title='AddGiftCardTextMessage' onPress={() => navigation.navigate('AddGiftCardTextMessage')} />
+                <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} />
                 
             </View>
         </SafeAreaView>
