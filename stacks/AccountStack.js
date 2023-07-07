@@ -14,6 +14,7 @@ import SubscriptionOption from "../modals/SubscriptionOption";
 import AddressesScreen from "../screens/accountscreens/AddressesScreen";
 import CreateNewAddress from "../modals/CreateNewAddress";
 import ConfirmAddress from "../modals/ConfirmAddress";
+import PaymentMethodScreen from "../screens/orderscreens/PaymentMethodScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -73,6 +74,10 @@ const AccountStack = () => {
         name="ConfirmAddress"
         component={ConfirmAddress}
         options={{ presentation: "card" }}
+      />
+      <Stack.Screen
+        name="PaymentMethodScreen"
+        component={PaymentMethodScreen}
       />
     </Stack.Navigator>
   );
