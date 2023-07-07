@@ -22,6 +22,7 @@ const GiftCardSelectedScreen = () => {
                 <Button title='PaymentMethodScreen' onPress={() => navigation.navigate('PaymentMethodScreen')} />
                 <Button title='AddCardScreen' onPress={() => navigation.navigate('AddCardScreen')} />
                 <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} />
+                <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} />
                 
             </View>
         </SafeAreaView>
