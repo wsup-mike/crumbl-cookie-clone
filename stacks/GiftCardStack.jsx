@@ -10,6 +10,7 @@ import AddGiftCardRecipients from '../modals/giftcardModals/AddGiftCardRecipient
 import AddGiftCardTextMessage from '../modals/giftcardModals/AddGiftCardTextMessage'
 import ReviewGiftCardOrder from '../modals/giftcardModals/ReviewGiftCardOrder'
 import GiftCardPlaceOrder from '../modals/giftcardModals/GiftCardPlaceOrder'
+import PriceBreakdown from '../modals/PriceBreakdown'
 
 
 const GiftCardStack = () => {
@@ -31,6 +32,7 @@ const GiftCardStack = () => {
             <Stack.Screen name='AddGiftCardTextMessage' component={AddGiftCardTextMessage} />
             <Stack.Screen name='ReviewGiftCardOrder' component={ReviewGiftCardOrder} />
             <Stack.Screen name='GiftCardPlaceOrder' component={GiftCardPlaceOrder} />
+            <Stack.Screen name='PriceBreakdown' component={PriceBreakdown} />
         </Stack.Navigator>
     )
 }
