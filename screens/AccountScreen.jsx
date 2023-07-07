@@ -14,6 +14,7 @@ const AccountScreen = () => {
             <Button title='UseGiftCardVoucher' onPress={() => navigation.navigate('UseGiftCardVoucher')}/>
             <Button title='StoreLocationsMapScreen' onPress={() => navigation.navigate('StoreLocationsMapScreen')}/>
             <Button title='PurchaseOrderHistoryScreen' onPress={() => navigation.navigate('PurchaseOrderHistoryScreen')}/>
+            <Button title='ManageSubscriptionsScreen' onPress={() => navigation.navigate('ManageSubscriptionsScreen')}/>
         </View>
     </SafeAreaView>
   )
