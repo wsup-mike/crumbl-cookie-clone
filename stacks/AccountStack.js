@@ -5,6 +5,7 @@ import AccountScreen from "../screens/AccountScreen";
 import CookieJournalScreen from "../screens/accountscreens/CookieJournalScreen";
 import AllergyNutrition from "../modals/AllergyNutrition";
 import UseGiftCardVoucher from "../modals/UseGiftCardVoucher";
+import StoreLocationsMapScreen from "../screens/accountscreens/StoreLocationsMapScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -24,6 +25,10 @@ const AccountStack = () => {
       />
       <Stack.Screen name="AllergyNutrition" component={AllergyNutrition} />
       <Stack.Screen name="UseGiftCardVoucher" component={UseGiftCardVoucher} />
+      <Stack.Screen
+        name="StoreLocationsMapScreen"
+        component={StoreLocationsMapScreen}
+      />
     </Stack.Navigator>
   );
 };
