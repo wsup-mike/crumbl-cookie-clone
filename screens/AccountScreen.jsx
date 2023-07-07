@@ -12,6 +12,7 @@ const AccountScreen = () => {
             <Button title='CookieJournalScreen' onPress={() => navigation.navigate('CookieJournalScreen')}/>
             <Button title='AllergyNutrition' onPress={() => navigation.navigate('AllergyNutrition')}/>
             <Button title='UseGiftCardVoucher' onPress={() => navigation.navigate('UseGiftCardVoucher')}/>
+            <Button title='StoreLocationsMapScreen' onPress={() => navigation.navigate('StoreLocationsMapScreen')}/>
         </View>
     </SafeAreaView>
   )
