@@ -3,6 +3,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import AccountScreen from "../screens/AccountScreen";
 import CookieJournalScreen from "../screens/accountscreens/CookieJournalScreen";
+import AllergyNutrition from "../modals/AllergyNutrition";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ const AccountStack = () => {
         component={CookieJournalScreen}
         options={{ presentation: "card" }}
       />
+      <Stack.Screen name="AllergyNutrition" component={AllergyNutrition} />
     </Stack.Navigator>
   );
 };
