@@ -16,6 +16,7 @@ import CreateNewAddress from "../modals/CreateNewAddress";
 import ConfirmAddress from "../modals/ConfirmAddress";
 import PaymentMethodScreen from "../screens/orderscreens/PaymentMethodScreen";
 import AddCardScreen from "../screens/orderscreens/AddCardScreen";
+import AccountDetailsScreen from "../screens/accountscreens/AccountDetailsScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -84,6 +85,11 @@ const AccountStack = () => {
       <Stack.Screen
         name="AddCardScreen"
         component={AddCardScreen}
+        options={{ presentation: "card" }}
+      />
+      <Stack.Screen
+        name="AccountDetailsScreen"
+        component={AccountDetailsScreen}
         options={{ presentation: "card" }}
       />
     </Stack.Navigator>
