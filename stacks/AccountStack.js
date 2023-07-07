@@ -11,6 +11,7 @@ import OrderScreen from "../screens/OrderScreen";
 import IndividualOrderReceiptScreen from "../screens/accountscreens/IndividualOrderReceiptScreen";
 import ManageSubscriptionsScreen from "../screens/accountscreens/ManageSubscriptionsScreen";
 import SubscriptionOption from "../modals/SubscriptionOption";
+import AddressesScreen from "../screens/accountscreens/AddressesScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -56,6 +57,7 @@ const AccountStack = () => {
         options={{ presentation: "card" }}
       />
       <Stack.Screen name="SubscriptionOption" component={SubscriptionOption} />
+      <Stack.Screen name="AddressesScreen" component={AddressesScreen} />
     </Stack.Navigator>
   );
 };
