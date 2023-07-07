@@ -8,6 +8,7 @@ import UseGiftCardVoucher from "../modals/UseGiftCardVoucher";
 import StoreLocationsMapScreen from "../screens/accountscreens/StoreLocationsMapScreen";
 import PurchaseOrderHistoryScreen from "../modals/accountModals/PurchaseOrderHistoryScreen";
 import OrderScreen from "../screens/OrderScreen";
+import IndividualOrderReceiptScreen from "../screens/accountscreens/IndividualOrderReceiptScreen";
 
 const AccountStack = () => {
   const Stack = createStackNavigator();
@@ -40,6 +41,11 @@ const AccountStack = () => {
       <Stack.Screen
         name="OrderScreen"
         component={OrderScreen}
+        options={{ presentation: "card" }}
+      />
+      <Stack.Screen
+        name="IndividualOrderReceiptScreen"
+        component={IndividualOrderReceiptScreen}
         options={{ presentation: "card" }}
       />
     </Stack.Navigator>
