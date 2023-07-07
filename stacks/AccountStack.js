@@ -28,6 +28,7 @@ const AccountStack = () => {
       <Stack.Screen
         name="StoreLocationsMapScreen"
         component={StoreLocationsMapScreen}
+        options={{ presentation: "card" }}
       />
     </Stack.Navigator>
   );
