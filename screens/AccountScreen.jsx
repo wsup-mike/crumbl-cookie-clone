@@ -13,6 +13,7 @@ const AccountScreen = () => {
             <Button title='AllergyNutrition' onPress={() => navigation.navigate('AllergyNutrition')}/>
             <Button title='UseGiftCardVoucher' onPress={() => navigation.navigate('UseGiftCardVoucher')}/>
             <Button title='StoreLocationsMapScreen' onPress={() => navigation.navigate('StoreLocationsMapScreen')}/>
+            <Button title='PurchaseOrderHistoryScreen' onPress={() => navigation.navigate('PurchaseOrderHistoryScreen')}/>
         </View>
     </SafeAreaView>
   )
