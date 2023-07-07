@@ -24,6 +24,7 @@ const GiftCardSelectedScreen = () => {
                 <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} />
                 <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} />
                 <Button title='FinalGiftCardOrderConfirmation' onPress={() => navigation.navigate('FinalGiftCardOrderConfirmation')} />
+                <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} />
                 
             </View>
         </SafeAreaView>
