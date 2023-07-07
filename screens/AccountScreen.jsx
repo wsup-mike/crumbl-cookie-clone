@@ -15,6 +15,8 @@ const AccountScreen = () => {
             <Button title='StoreLocationsMapScreen' onPress={() => navigation.navigate('StoreLocationsMapScreen')}/>
             <Button title='PurchaseOrderHistoryScreen' onPress={() => navigation.navigate('PurchaseOrderHistoryScreen')}/>
             <Button title='ManageSubscriptionsScreen' onPress={() => navigation.navigate('ManageSubscriptionsScreen')}/>
+            <Button title='AddressesScreen' onPress={() => navigation.navigate('AddressesScreen')}/>
+
         </View>
     </SafeAreaView>
   )

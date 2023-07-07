@@ -57,7 +57,11 @@ const AccountStack = () => {
         options={{ presentation: "card" }}
       />
       <Stack.Screen name="SubscriptionOption" component={SubscriptionOption} />
-      <Stack.Screen name="AddressesScreen" component={AddressesScreen} />
+      <Stack.Screen
+        name="AddressesScreen"
+        component={AddressesScreen}
+        options={{ presentation: "card" }}
+      />
     </Stack.Navigator>
   );
 };
