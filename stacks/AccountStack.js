@@ -25,6 +25,7 @@ const AccountStack = () => {
     <Stack.Navigator
       initialRouteName="AccountScreen"
       screenOptions={{
+        headerShown: false,
         presentation: "modal",
       }}
     >
