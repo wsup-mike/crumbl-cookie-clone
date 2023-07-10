@@ -28,6 +28,7 @@ const WalletStack = () => {
     <Stack.Navigator
       initialRouteName="WalletScreen"
       screenOptions={{
+        headerShown: false,
         presentation: "modal",
       }}
     >
