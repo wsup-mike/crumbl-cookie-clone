@@ -13,24 +13,26 @@ const StorePickupOrderingStack = () => {
     <Stack.Navigator
       initialRouteName="SelectPickupLocation"
       screenOptions={{
-        headerShown: false,
-        // presentation: "modal",
+        // headerShown: false,
+        presentation: "card",
       }}
     >
       <Stack.Screen
         name="SelectPickupLocation"
         component={SelectPickupLocation}
-        options={{
-          headerShown: false, // Hide header
-          // presentation: "modal",
-        }}
+        options={
+          {
+            // headerShown: false, // Hide header
+            // presentation: "modal",
+          }
+        }
       />
       <Stack.Screen
         name="StorePickupOption"
         component={StorePickupOption}
-        options={{
-          headerShown: false,
-        }}
+        // options={{
+        //   headerShown: false,
+        // }}
       />
       <Stack.Screen
         name="TestingModal"

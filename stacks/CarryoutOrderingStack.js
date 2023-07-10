@@ -33,7 +33,7 @@ const CarryoutOrderingStack = () => {
       <Stack.Screen
         name="CarryoutOrderScreen"
         component={CarryoutOrderScreen}
-        options={{}}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="SelectPickupLocation"

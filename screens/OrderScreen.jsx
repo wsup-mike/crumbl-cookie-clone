@@ -12,22 +12,20 @@ const OrderScreen = () => {
     <SafeAreaView className='flex-1 items-center justify-center bg-teal-300'>
         <View>
             <Text className='text-3xl text-center'>ORDER SCREEN:5 Options to Order</Text>
-            <Button
-              title='DeliveryOrderingStack' 
-              onPress={() => {
-                navigation.navigate('DeliveryOrderingStack')
-              }}
-            />
-             
-            
             <Button 
               title='StorePickupOrderingStack' 
               onPress={() => {
                 navigation.navigate('StorePickupOrderingStack')
               }}
             />
-          
             
+            <Button
+              title='DeliveryOrderingStack' 
+              onPress={() => {
+                navigation.navigate('DeliveryOrderingStack')
+              }}
+            />
+        
             <Button 
               title='CateringPickupOrderingStack' 
               onPress={() => {}}

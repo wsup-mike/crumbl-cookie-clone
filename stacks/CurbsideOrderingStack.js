@@ -33,6 +33,7 @@ const CurbsideOrderingStack = () => {
       <Stack.Screen
         name="CurbsideOrderScreen"
         component={CurbsideOrderScreen}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="SelectPickupLocation"
