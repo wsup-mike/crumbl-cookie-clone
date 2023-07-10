@@ -26,6 +26,7 @@ const GiftCardStack = () => {
         <Stack.Navigator 
             initialRouteName='GiftCardScreen'
             screenOptions={{
+                headerShown: false,
                 presentation: 'modal',
             }}
         >
