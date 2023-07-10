@@ -29,11 +29,16 @@ const Stack = createStackNavigator();
 
 const CarryoutOrderingStack = () => {
   return (
-    <Stack.Navigator screenOptions={{}}>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+        presentation: "modal",
+      }}
+    >
       <Stack.Screen
         name="CarryoutOrderScreen"
         component={CarryoutOrderScreen}
-        options={{ headerShown: false }}
+        // options={{ headerShown: false }}
       />
       <Stack.Screen
         name="SelectPickupLocation"
