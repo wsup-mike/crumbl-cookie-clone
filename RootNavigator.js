@@ -3,7 +3,8 @@ import { Image } from "react-native";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import HomeScreen from "./screens/HomeScreen";
+// import HomeScreen from "./screens/HomeScreen";
+import HomeStack from "./stacks/HomeStack";
 // import OrderScreen from "./screens/OrderScreen";
 import WalletScreen from "./screens/WalletScreen";
 // import GiftCardScreen from "./screens/GiftCardScreen";
@@ -32,7 +33,7 @@ const RootNavigator = () => {
       // })}
       screenOptions={{ headerShown: false }}
     >
-      <Tab.Screen name="Menu" component={MenuModalStack} />
+      <Tab.Screen name="Menu" component={HomeStack} />
       <Tab.Screen name="Order" component={OrderStack} />
       <Tab.Screen name="Wallet" component={WalletStack} />
       <Tab.Screen name="Gifts" component={GiftCardStack} />
