@@ -32,13 +32,11 @@ const CarryoutOrderingStack = () => {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        presentation: "modal",
       }}
     >
       <Stack.Screen
         name="CarryoutOrderScreen"
         component={CarryoutOrderScreen}
-        // options={{ headerShown: false }}
       />
       <Stack.Screen
         name="SelectPickupLocation"
