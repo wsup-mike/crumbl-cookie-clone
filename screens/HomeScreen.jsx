@@ -1,5 +1,5 @@
 import { View, Text, Button, SafeAreaView } from 'react-native'
-import React, { useState } from 'react'
+import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
@@ -12,9 +12,7 @@ const HomeScreen = () => {
             <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
             <Button 
               title='Order Now (OrderScreen)' 
-              onPress={()=> {
-                navigation.navigate('OrderStack', { screen: 'OrderScreen' })
-              }}
+              
             />
         </View>
       </SafeAreaView>

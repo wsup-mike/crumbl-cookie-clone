@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView, Button } from 'react-native'
-import React, { useState } from 'react'
+import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import StorePickupOrderingStack from '../stacks/StorePickupOrderingStack'
 import DeliveryOrderingStack from '../stacks/DeliveryOrderingStack'
