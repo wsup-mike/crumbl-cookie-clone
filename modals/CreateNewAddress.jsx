@@ -13,7 +13,7 @@ const CreateNewAddress = () => {
                 <Button 
                     title='Go to NormalScreen' 
                     onPress={() => {
-                        navigation.navigate('DeliveryModalStack', {screen: 'NormalScreen'})
+                        navigation.navigate('NormalScreen')
                     }} 
                 />
             </View>
