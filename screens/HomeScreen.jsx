@@ -10,7 +10,12 @@ const HomeScreen = () => {
       <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
         <View>
             <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
-            <Button title='Order Now (OrderScreen)' onPress={()=> {navigation.navigate('OrderScreen')}}/>
+            <Button 
+              title='Order Now (OrderScreen)' 
+              onPress={()=> {
+                navigation.navigate('OrderStack', { screen: 'OrderScreen' })
+              }}
+            />
         </View>
       </SafeAreaView>
   )
