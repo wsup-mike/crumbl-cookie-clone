@@ -18,7 +18,7 @@ const OrderStack = () => {
         presentation: "modal",
       }}
     >
-      <Stack.Screen name="OrderScreen" component={OrderScreen} options={{}} />
+      <Stack.Screen name="OrderScreen" component={OrderScreen} />
 
       <Stack.Screen
         name="StorePickupOrderingStack"
