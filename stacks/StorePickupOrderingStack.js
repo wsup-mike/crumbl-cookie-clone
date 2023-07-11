@@ -10,29 +10,11 @@ const Stack = createStackNavigator();
 
 const StorePickupOrderingStack = () => {
   return (
-    <Stack.Navigator
-      initialRouteName="SelectPickupLocation"
-      screenOptions={{
-        // headerShown: false,
-        presentation: "card",
-      }}
-    >
+    <Stack.Navigator initialRouteName="TestingModal">
+      <Stack.Screen name="StorePickupOption" component={StorePickupOption} />
       <Stack.Screen
         name="SelectPickupLocation"
         component={SelectPickupLocation}
-        options={
-          {
-            // headerShown: false, // Hide header
-            // presentation: "modal",
-          }
-        }
-      />
-      <Stack.Screen
-        name="StorePickupOption"
-        component={StorePickupOption}
-        // options={{
-        //   headerShown: false,
-        // }}
       />
       <Stack.Screen
         name="TestingModal"
