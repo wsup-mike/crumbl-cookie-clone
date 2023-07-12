@@ -19,7 +19,6 @@ const OrderStack = () => {
       }}
     >
       <Stack.Screen name="OrderScreen" component={OrderScreen} />
-
       <Stack.Screen
         name="StorePickupOrderingStack"
         component={StorePickupOrderingStack}
