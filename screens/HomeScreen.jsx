@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
-  const [modalOpen, setModalOpen]
+  const [modalOpen, setModalOpen] = useState(false)
 
   const navigation = useNavigation();
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
-      <Modal visible={true}>
+      <Modal visible={modalOpen}>
         <View className='flex-1 items-center justify-center bg-slate-400 pt-10'>
           <Text className='text-3xl text-center text-white'>This is Modal Practice</Text>
         </View>
