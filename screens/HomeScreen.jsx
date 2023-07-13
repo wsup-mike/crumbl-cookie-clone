@@ -14,18 +14,19 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
-      <Modal 
+     <Modal 
         isVisible={modalOpen}
         animationIn='slideInUp'
         animationOut='slideOutDown'
-        swipeDirection={['down']}
+        swipeDirection={'down'}
         onSwipeComplete={closeModal}
         // propagateSwipe
         onBackdropPress={() => setModalOpen(false)}
+        className='m-0 mt-8'
       >
         
-          <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl mt-4'>
-            <Text className='text-3xl text-center'>This is Modal Practice</Text>
+          <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
+            <Text className='text-3xl text-center'>This is Modal 1</Text>
             <Button 
               title='Toggle Modal on/off'
               onPress={() => setModalOpen(!modalOpen)}
@@ -33,6 +34,17 @@ const HomeScreen = () => {
           </View>
         
       </Modal>
+      
+      <Modal>
+        <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
+              <Text className='text-3xl text-center'>This is Modal 1</Text>
+              <Button 
+                title='Toggle Modal on/off'
+                onPress={() => setModalOpen(!modalOpen)}
+              />
+        </View>
+      </Modal>
+
       <View>
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
           <Button 
