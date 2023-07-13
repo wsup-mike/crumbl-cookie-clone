@@ -15,7 +15,11 @@ const HomeScreen = () => {
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       <Modal 
         visible={modalOpen}
-        animationType='slide'
+        // animationType='slide'
+        animationIn="slideInUp"
+        animationOut="slideOutDown"
+        swipeDirection={['down']}
+        onSwipeComplete={closeModal}
         transparent={true}
       >
         
