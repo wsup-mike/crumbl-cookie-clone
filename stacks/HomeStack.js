@@ -12,7 +12,7 @@ const HomeStack = () => {
       screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
-      <Stack.Screen name="OrderStack" component={OrderStack} />
+      {/* <Stack.Screen name="OrderStack" component={OrderStack} /> */}
     </Stack.Navigator>
   );
 };
