@@ -13,7 +13,7 @@ const HomeScreen = () => {
         visible={modalOpen}
         animationType='slide'
       >
-        <View className='flex-1 items-center justify-center bg-slate-400 rounded-t-2xl'>
+        <View className='flex-1 items-center justify-center bg-slate-400 rounded-t-2xl mt-8'>
           <Text className='text-3xl text-center text-white'>This is Modal Practice</Text>
           <Button 
             title='Toggle Modal on/off'
