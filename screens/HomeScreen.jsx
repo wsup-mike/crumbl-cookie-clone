@@ -13,6 +13,11 @@ const HomeScreen = () => {
     setModalOpen(false)
   }
 
+  const closeBothModals = () => {
+    setModalOpen(false)
+    setModal2Open(false)
+  }
+
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
      <Modal 
@@ -39,7 +44,11 @@ const HomeScreen = () => {
       </Modal>
       
       <Modal
-
+        isVisible={modal2Open}
+        animationIn='slideInRight'
+        animationOut='slideOutLeft'
+        swipeDirection={['right', 'down']}
+        onSwipeComplete={}
       >
         <View className='flex-1 items-center justify-center bg-fuchsia-700 rounded-t-3xl'>
               <Text className='text-3xl text-center'>This is Modal 2</Text>
