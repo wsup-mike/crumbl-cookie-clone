@@ -15,8 +15,13 @@ const HomeScreen = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       <Modal 
-       
-        // onBackdropPress={() => setModalOpen(false)}
+        isVisible={modalOpen}
+        animationIn='slideInUp'
+        animationOut='slideOutDown'
+        swipeDirection={['down']}
+        onSwipeComplete={closeModal}
+        // propagateSwipe
+        onBackdropPress={() => setModalOpen(false)}
       >
         
           <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl mt-8'>
