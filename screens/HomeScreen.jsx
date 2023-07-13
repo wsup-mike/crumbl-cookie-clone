@@ -5,6 +5,7 @@ import Modal from 'react-native-modal'
 
 const HomeScreen = () => {
   const [modalOpen, setModalOpen] = useState(false)
+  const [modal2Open, setModal2Open] = useState(false)
 
   const navigation = useNavigation();
 
@@ -24,22 +25,26 @@ const HomeScreen = () => {
         onBackdropPress={() => setModalOpen(false)}
         className='m-0 mt-8'
       >
-        
-          <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
-            <Text className='text-3xl text-center'>This is Modal 1</Text>
-            <Button 
-              title='Toggle Modal on/off'
-              onPress={() => setModalOpen(!modalOpen)}
-            />
-          </View>
-        
+        <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
+          <Text className='text-3xl text-center'>This is Modal 1</Text>
+          <Button 
+            title='Toggle Modal on/off'
+            onPress={() => setModalOpen(!modalOpen)}
+          />
+          <Button 
+            title='Move rightwards to Modal 2'
+            // onPress={() => setModalOpen(!modalOpen)}
+          />
+        </View>  
       </Modal>
       
-      <Modal>
-        <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
-              <Text className='text-3xl text-center'>This is Modal 1</Text>
+      <Modal
+
+      >
+        <View className='flex-1 items-center justify-center bg-fuchsia-700 rounded-t-3xl'>
+              <Text className='text-3xl text-center'>This is Modal 2</Text>
               <Button 
-                title='Toggle Modal on/off'
+                title='Return back to HomeScreen'
                 onPress={() => setModalOpen(!modalOpen)}
               />
         </View>
