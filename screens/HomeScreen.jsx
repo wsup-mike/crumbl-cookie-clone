@@ -1,6 +1,7 @@
-import { View, Text, Button, SafeAreaView, Modal } from 'react-native'
+import { View, Text, Button, SafeAreaView } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
+import Modal from 'react-native-modal'
 
 const HomeScreen = () => {
   const [modalOpen, setModalOpen] = useState(false)
@@ -14,14 +15,8 @@ const HomeScreen = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       <Modal 
-        visible={modalOpen}
-        animationType='slide'
-        animationIn="slideInUp"
-        animationOut="slideOutDown"
-        swipeDirection={['down']}
-        onSwipeComplete={closeModal}
-        transparent={true}
-        hasBackdrop={true}
+       
+        // onBackdropPress={() => setModalOpen(false)}
       >
         
           <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl mt-8'>
