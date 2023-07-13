@@ -24,7 +24,7 @@ const HomeScreen = () => {
         onBackdropPress={() => setModalOpen(false)}
       >
         
-          <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl mt-8'>
+          <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl mt-4'>
             <Text className='text-3xl text-center'>This is Modal Practice</Text>
             <Button 
               title='Toggle Modal on/off'
