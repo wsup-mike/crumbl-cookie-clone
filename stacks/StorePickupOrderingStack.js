@@ -10,7 +10,10 @@ const Stack = createStackNavigator();
 
 const StorePickupOrderingStack = () => {
   return (
-    <Stack.Navigator initialRouteName="TestingModal">
+    <Stack.Navigator
+      initialRouteName="SelectPickupLocation"
+      // screenOptions={{ presentation: "modal" }}
+    >
       <Stack.Screen name="StorePickupOption" component={StorePickupOption} />
       <Stack.Screen
         name="SelectPickupLocation"
