@@ -15,15 +15,16 @@ const HomeScreen = () => {
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       <Modal 
         visible={modalOpen}
-        // animationType='slide'
+        animationType='slide'
         animationIn="slideInUp"
         animationOut="slideOutDown"
         swipeDirection={['down']}
         onSwipeComplete={closeModal}
         transparent={true}
+        hasBackdrop={true}
       >
         
-          <View className='flex-1 items-center justify-center bg-slate-400 rounded-t-3xl mt-8'>
+          <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl mt-8'>
             <Text className='text-3xl text-center'>This is Modal Practice</Text>
             <Button 
               title='Toggle Modal on/off'
