@@ -12,16 +12,17 @@ const HomeScreen = () => {
       <Modal 
         visible={modalOpen}
         animationType='slide'
+        transparent={true}
       >
-        <View className='bg-transparent'>
-          <View className='flex-1 items-center justify-center bg-slate-400 rounded-t-2xl mt-8'>
-            <Text className='text-3xl text-center text-white'>This is Modal Practice</Text>
+        
+          <View className='flex-1 items-center justify-center bg-slate-400 rounded-t-3xl mt-8'>
+            <Text className='text-3xl text-center'>This is Modal Practice</Text>
             <Button 
               title='Toggle Modal on/off'
               onPress={() => setModalOpen(!modalOpen)}
             />
           </View>
-        </View>
+        
       </Modal>
       <View>
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
