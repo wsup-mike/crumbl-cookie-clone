@@ -9,7 +9,10 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
-      <Modal visible={modalOpen}>
+      <Modal 
+        visible={modalOpen}
+        animationType='slide'
+      >
         <View className='flex-1 items-center justify-center bg-slate-400 pt-10'>
           <Text className='text-3xl text-center text-white'>This is Modal Practice</Text>
           <Button 
