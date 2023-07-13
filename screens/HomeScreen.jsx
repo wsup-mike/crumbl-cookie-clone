@@ -38,7 +38,7 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            // onPress={() => setModalOpen(!modalOpen)}
+            onPress={() => setModal2Open((prev) => !prev)}
           />
         </View>  
       </Modal>
@@ -48,14 +48,15 @@ const HomeScreen = () => {
         animationIn='slideInRight'
         animationOut='slideOutLeft'
         swipeDirection={['right', 'down']}
-        onSwipeComplete={}
+        onSwipeComplete={closeBothModals}
+        onBackdropPress={closeBothModals}
       >
         <View className='flex-1 items-center justify-center bg-fuchsia-700 rounded-t-3xl'>
-              <Text className='text-3xl text-center'>This is Modal 2</Text>
-              <Button 
-                title='Return back to HomeScreen'
-                onPress={() => setModalOpen(!modalOpen)}
-              />
+          <Text className='text-3xl text-center'>This is Modal 2</Text>
+          <Button 
+            title='Return back to HomeScreen'
+            onPress={closeBothModals}
+          />
         </View>
       </Modal>
 
