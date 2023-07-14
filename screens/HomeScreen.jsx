@@ -19,6 +19,7 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
+      {/* 1st Modal */}
      <Modal 
         isVisible={modalOpen}
         animationIn='slideInUp'
@@ -42,6 +43,7 @@ const HomeScreen = () => {
         </View>  
       </Modal>
      
+     {/* 2nd Modal  */}
      <Modal 
         isVisible={modal2Open}
         animationIn='slideInRight'
@@ -61,6 +63,7 @@ const HomeScreen = () => {
         </View>  
       </Modal>
 
+    {/* Our origin screen: HomeScreen */}
       <View>
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
           <Button 
