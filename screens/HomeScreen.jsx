@@ -54,7 +54,7 @@ const HomeScreen = () => {
       <Modal
         isVisible={modal2Open}
         animationIn='slideInRight'
-        animationOut='slideOutLeft'
+        animationOut='slideOutRight'
         swipeDirection={['right', 'down']}
         onSwipeComplete={closeModal2}
         onBackdropPress={closeModal2}
