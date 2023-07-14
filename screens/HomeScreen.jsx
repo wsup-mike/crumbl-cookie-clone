@@ -13,8 +13,8 @@ const HomeScreen = () => {
     setModalOpen(!modalOpen)
   }
 
-  const closeModal2 = () => {
-    setModal2Open(false)
+  const toggleModal2 = () => {
+    setModal2Open(!modal2Open)
   }
 
   return (
@@ -26,7 +26,7 @@ const HomeScreen = () => {
         animationIn='slideInUp'
         animationOut='slideOutDown'
         swipeDirection={['down']}
-        onSwipeComplete={closeModal}
+        onSwipeComplete={toggleModal1}
         // propagateSwipe
         // onBackdropPress={() => setModalOpen(false)}
         className='m-0 mt-8'
