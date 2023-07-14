@@ -49,7 +49,7 @@ const HomeScreen = () => {
      <Modal 
         isVisible={modal2Open}
         animationIn='slideInRight'
-        animationOut='slideOutRight'
+        animationOut='slideOutLeft'
         swipeDirection={['right']}
         onSwipeComplete={closeModal2}
         // propagateSwipe
