@@ -17,19 +17,7 @@ const HomeScreen = () => {
     setModal2Open(!modal2Open)
   }
 
-  const handleModal1Hide = () => {
-    if (!modalOpen) {
-      setModal2Open(true)
-    }
-  }
-  // If modalOpen is false, only THEN to setModal2Open to true
 
-  const handleModal2Hide = () => {
-    if (modalOpen) {
-      setModal2Open(false)
-    }
-  }
-  // If modal 1 is open, only THEN to set modal 2 to close
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       {/* 1st Modal */}
@@ -42,6 +30,7 @@ const HomeScreen = () => {
         onSwipeComplete={toggleModal1}
         // propagateSwipe
         // onBackdropPress={() => setModalOpen(false)}
+        onModalHide={handleModal1Hide}
         className='m-0 mt-8'
       >
         <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
@@ -52,10 +41,7 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            onPress={() => {
-              setModalOpen(false)
-              setModal2Open(true)
-            }}
+            onPress={() => setModal2Open(!modal2Open)}
           />
         </View>  
       </Modal>
@@ -70,6 +56,7 @@ const HomeScreen = () => {
         onSwipeComplete={toggleModal2}
         // propagateSwipe
         onBackdropPress={() => setModal2Open(false)}
+        onModalHide={handleModal2Hide}
         className='m-0 mt-8'
       >
         <View className='flex-1 items-center justify-center bg-green-400 rounded-t-3xl'>
