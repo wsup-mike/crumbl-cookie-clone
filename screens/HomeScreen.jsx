@@ -5,7 +5,7 @@ import Modal from 'react-native-modal'
 
 const HomeScreen = () => {
   const [modalOpen, setModalOpen] = useState(false)
-  const [modal2Open, setModal2Open] = useState(false)
+  // const [modal2Open, setModal2Open] = useState(false)
 
   const navigation = useNavigation();
 
@@ -13,18 +13,18 @@ const HomeScreen = () => {
     setModalOpen(false)
   }
 
-  const openModal2 = () => {
-    setModal2Open(true)
-  }
+  // const openModal2 = () => {
+  //   setModal2Open(true)
+  // }
 
-  const closeModal2 = () => {
-    setModal2Open(false)
-  }
+  // const closeModal2 = () => {
+  //   setModal2Open(false)
+  // }
   
-  const closeBothModals = () => {
-    setModalOpen(false)
-    setModal2Open(false)
-  }
+  // const closeBothModals = () => {
+  //   setModalOpen(false)
+  //   setModal2Open(false)
+  // }
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
@@ -51,7 +51,7 @@ const HomeScreen = () => {
         </View>  
       </Modal>
       
-      <Modal
+      {/* <Modal
         isVisible={modal2Open}
         animationIn='slideInRight'
         animationOut='slideOutRight'
@@ -66,7 +66,7 @@ const HomeScreen = () => {
             onPress={() => setModal2Open(!modal2Open)}
           />
         </View>
-      </Modal>
+      </Modal> */}
 
       <View>
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
