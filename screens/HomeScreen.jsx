@@ -51,7 +51,7 @@ const HomeScreen = () => {
         animationIn='slideInRight'
         animationOut='slideOutRight'
         swipeDirection={['right']}
-        onSwipeComplete={closeModal2}
+        onSwipeComplete={toggleModal2}
         // propagateSwipe
         onBackdropPress={() => setModal2Open(false)}
         className='m-0 mt-8'
@@ -60,7 +60,7 @@ const HomeScreen = () => {
           <Text className='text-3xl text-center'>This is Modal 2</Text>
           <Button 
             title='Toggle Modal on/off'
-            onPress={closeModal2}
+            onPress={toggleModal2}
           />
         </View>  
       </Modal>
