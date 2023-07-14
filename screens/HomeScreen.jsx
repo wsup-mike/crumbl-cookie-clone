@@ -37,7 +37,7 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            onPress={openModal2}
+            onPress={() => setModal2Open(!modal2Open)}
           />
         </View>  
       </Modal>
@@ -49,7 +49,7 @@ const HomeScreen = () => {
         swipeDirection={['right']}
         onSwipeComplete={closeModal2}
         // propagateSwipe
-        onBackdropPress={closeModal2}
+        onBackdropPress={() => setModal2Open(false)}
         className='m-0 mt-8'
       >
         <View className='flex-1 items-center justify-center bg-green-400 rounded-t-3xl'>
