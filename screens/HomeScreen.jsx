@@ -40,8 +40,8 @@ const HomeScreen = () => {
           <Button 
             title='Move rightwards to Modal 2'
             onPress={() => {
-              setModalOpen(!modalOpen)
-              setModal2Open(!modal2Open)
+              setModalOpen(false)
+              setModal2Open(true)
             }}
           />
         </View>  
