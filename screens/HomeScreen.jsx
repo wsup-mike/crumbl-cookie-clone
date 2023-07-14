@@ -39,7 +39,10 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            onPress={() => setModal2Open(!modal2Open)}
+            onPress={() => {
+              setModalOpen(!modalOpen)
+              setModal2Open(!modal2Open)
+            }}
           />
         </View>  
       </Modal>
@@ -70,7 +73,7 @@ const HomeScreen = () => {
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
           <Button 
             title='Toggle Modal on/off'
-            // onPress={() => setModalOpen(!modalOpen)}
+            onPress={() => setModalOpen(!modalOpen)}
             // onPress={() => setModal2Open(!modal2Open)}
           />
           <Button 
