@@ -9,8 +9,8 @@ const HomeScreen = () => {
 
   const navigation = useNavigation();
 
-  const closeModal = () => {
-    setModalOpen(false)
+  const toggleModal1 = () => {
+    setModalOpen(!modalOpen)
   }
 
   const closeModal2 = () => {
