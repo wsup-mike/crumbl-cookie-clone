@@ -23,7 +23,13 @@ const HomeScreen = () => {
     }
   }
   // If modalOpen is false, only THEN to setModal2Open to true
-  
+
+  const handleModal2Hide = () => {
+    if (modalOpen) {
+      setModal2Open(false)
+    }
+  }
+  // If modal 1 is open, only THEN to set modal 2 to close
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       {/* 1st Modal */}
