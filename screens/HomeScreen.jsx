@@ -30,7 +30,7 @@ const HomeScreen = () => {
         onSwipeComplete={toggleModal1}
         // propagateSwipe
         // onBackdropPress={() => setModalOpen(false)}
-        onModalHide={handleModal1Hide}
+        
         className='m-0 mt-8'
       >
         <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
@@ -56,7 +56,7 @@ const HomeScreen = () => {
         onSwipeComplete={toggleModal2}
         // propagateSwipe
         onBackdropPress={() => setModal2Open(false)}
-        onModalHide={handleModal2Hide}
+        
         className='m-0 mt-8'
       >
         <View className='flex-1 items-center justify-center bg-green-400 rounded-t-3xl'>
@@ -68,7 +68,7 @@ const HomeScreen = () => {
         </View>  
       </Modal>
 
-    {/* Our origin screen: HomeScreen */}
+    {/* The origin screen: HomeScreen */}
       <View>
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
           <Button 
