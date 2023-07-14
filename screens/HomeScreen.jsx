@@ -27,7 +27,7 @@ const HomeScreen = () => {
         isVisible={modalOpen}
         animationIn='slideInUp'
         animationOut='slideOutDown'
-        swipeDirection={'down'}
+        swipeDirection={['down']}
         onSwipeComplete={closeModal}
         // propagateSwipe
         onBackdropPress={() => setModalOpen(false)}
@@ -38,6 +38,29 @@ const HomeScreen = () => {
           <Button 
             title='Toggle Modal on/off'
             onPress={() => setModalOpen(!modalOpen)}
+          />
+          <Button 
+            title='Move rightwards to Modal 2'
+            onPress={openModal2}
+          />
+        </View>  
+      </Modal>
+     
+     <Modal 
+        isVisible={modal2Open}
+        animationIn='slideInRight'
+        animationOut='slideOutRight'
+        swipeDirection={['right']}
+        onSwipeComplete={closeModal2}
+        // propagateSwipe
+        onBackdropPress={closeModal2}
+        className='m-0 mt-8'
+      >
+        <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
+          <Text className='text-3xl text-center'>This is Modal 2</Text>
+          <Button 
+            title='Toggle Modal on/off'
+            onPress={() => setModal2Open(!modal2Open)}
           />
           <Button 
             title='Move rightwards to Modal 2'
