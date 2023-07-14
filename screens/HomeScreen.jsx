@@ -43,7 +43,7 @@ const HomeScreen = () => {
       </Modal>
      
      <Modal 
-        isVisible={false}
+        isVisible={modal2Open}
         animationIn='slideInRight'
         animationOut='slideOutRight'
         swipeDirection={['right']}
