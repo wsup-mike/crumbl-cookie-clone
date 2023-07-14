@@ -17,6 +17,13 @@ const HomeScreen = () => {
     setModal2Open(!modal2Open)
   }
 
+  const handleModal1Hide = () => {
+    if (!modalOpen) {
+      setModal2Open(true)
+    }
+  }
+  // If modalOpen is false, only THEN to setModal2Open to true
+  
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       {/* 1st Modal */}
@@ -41,7 +48,7 @@ const HomeScreen = () => {
             title='Move rightwards to Modal 2'
             onPress={() => {
               setModalOpen(false)
-              toggleModal2()
+              setModal2Open(true)
             }}
           />
         </View>  
