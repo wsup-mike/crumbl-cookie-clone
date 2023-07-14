@@ -20,6 +20,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
       {/* 1st Modal */}
+      
      <Modal 
         isVisible={modalOpen}
         animationIn='slideInUp'
@@ -27,7 +28,7 @@ const HomeScreen = () => {
         swipeDirection={['down']}
         onSwipeComplete={closeModal}
         // propagateSwipe
-        onBackdropPress={() => setModalOpen(false)}
+        // onBackdropPress={() => setModalOpen(false)}
         className='m-0 mt-8'
       >
         <View className='flex-1 items-center justify-center bg-amber-500 rounded-t-3xl'>
@@ -38,10 +39,11 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            onPress={() => setModal2Open(!modal2Open)}
+            onPress={() => setModal2Open(true)}
           />
         </View>  
       </Modal>
+      
      
      {/* 2nd Modal  */}
      <Modal 
