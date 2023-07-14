@@ -27,7 +27,7 @@ const HomeScreen = () => {
         animationIn='slideInUp'
         animationOut='slideOutDown'
         swipeDirection={['down']}
-        onSwipeComplete={toggleModal1}
+        // onSwipeComplete={toggleModal1}
         // propagateSwipe
         // onBackdropPress={() => setModalOpen(false)}
         
@@ -53,7 +53,7 @@ const HomeScreen = () => {
         animationIn='slideInRight'
         animationOut='slideOutRight'
         swipeDirection={['right']}
-        onSwipeComplete={toggleModal2}
+        // onSwipeComplete={toggleModal2}
         // propagateSwipe
         onBackdropPress={() => setModal2Open(false)}
         
