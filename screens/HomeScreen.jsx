@@ -13,6 +13,10 @@ const HomeScreen = () => {
     setModalOpen(false)
   }
 
+  const openModal2 = () => {
+    setModal2Open(true)
+  }
+  
   const closeBothModals = () => {
     setModalOpen(false)
     setModal2Open(false)
