@@ -27,7 +27,7 @@ const HomeScreen = () => {
         animationIn='slideInUp'
         animationOut='slideOutDown'
         swipeDirection={['down']}
-        // onSwipeComplete={toggleModal1}
+        onSwipeComplete={toggleModal1}
         // propagateSwipe
         // onBackdropPress={() => setModalOpen(false)}
         
@@ -41,7 +41,7 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            onPress={() => setModal2Open(!modal2Open)}
+            onPress={() => setModal2Open(true)}
           />
         </View>  
       </Modal>
@@ -73,8 +73,8 @@ const HomeScreen = () => {
           <Text className='text-3xl text-center'>HOME SCREEN: The Mutha Frikin Crumbl Cookie Clone App</Text>
           <Button 
             title='Toggle Modal on/off'
-            // onPress={() => setModalOpen(!modalOpen)}
-            onPress={() => setModal2Open(!modal2Open)}
+            onPress={() => setModalOpen(!modalOpen)}
+            // onPress={() => setModal2Open(!modal2Open)}
           />
           <Button 
             title='Go to OrderScreen' 
