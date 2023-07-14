@@ -5,12 +5,15 @@ import Modal from 'react-native-modal'
 
 const HomeScreen = () => {
   const [modalOpen, setModalOpen] = useState(false)
+  const [modal2Open, setModal2Open] = useState(false)
 
   const navigation = useNavigation();
 
   const closeModal = () => {
     setModalOpen(false)
   }
+
+  
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
