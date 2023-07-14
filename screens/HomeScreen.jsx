@@ -46,7 +46,7 @@ const HomeScreen = () => {
           />
           <Button 
             title='Move rightwards to Modal 2'
-            onPress={openModal2}
+            onPress={() => setModal2Open(true)}
           />
         </View>  
       </Modal>
@@ -55,15 +55,15 @@ const HomeScreen = () => {
         isVisible={modal2Open}
         animationIn='slideInRight'
         animationOut='slideOutRight'
-        swipeDirection={['right', 'down']}
+        swipeDirection={'right'}
         onSwipeComplete={closeModal2}
-        onBackdropPress={closeModal2}
+        onBackdropPress={() => setModal2Open(false)}
       >
         <View className='flex-1 items-center justify-center bg-fuchsia-700 rounded-t-3xl'>
           <Text className='text-3xl text-center'>This is Modal 2</Text>
           <Button 
             title='Return back to HomeScreen'
-            onPress={closeModal2}
+            onPress={() => setModal2Open(!modal2Open)}
           />
         </View>
       </Modal>
