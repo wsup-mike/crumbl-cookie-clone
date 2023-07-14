@@ -13,7 +13,9 @@ const HomeScreen = () => {
     setModalOpen(false)
   }
 
-  
+  const openModal2 = () => {
+    setModal2Open(true)
+  }
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
