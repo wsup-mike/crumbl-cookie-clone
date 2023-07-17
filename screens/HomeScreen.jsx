@@ -1,5 +1,5 @@
 import { View, Text, Button, SafeAreaView } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import Modal from 'react-native-modal'
 
@@ -87,3 +87,4 @@ const HomeScreen = () => {
 }
 
 export default HomeScreen
+
