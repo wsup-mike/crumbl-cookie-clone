@@ -1,4 +1,4 @@
-import { View, Text, Button, SafeAreaView } from 'react-native'
+import { View, Text, Button, SafeAreaView, Animated } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import Modal from 'react-native-modal'
@@ -81,6 +81,7 @@ const HomeScreen = () => {
             // onPress={() => navigation.navigate('Order', { screen: 'OrderScreen'})}
             onPress={() => navigation.navigate('Order', { screen: 'OrderScreen'})}
           />
+          
       </View>
     </SafeAreaView>
   )
