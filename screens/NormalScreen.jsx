@@ -5,7 +5,7 @@ const NormalScreen = () => {
   return (
     <SafeAreaView className='flex-1 items-center justify-center'>
         <View>
-            <Text className='text-3xl text-center'>Normal Screen</Text>
+            <Text className='text-3xl text-center'>Normal Screen - Normal</Text>
         </View>
     </SafeAreaView>
   )
