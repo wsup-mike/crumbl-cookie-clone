@@ -12,7 +12,7 @@ const StorePickupOrderingStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="SelectPickupLocation"
-      // screenOptions={{ presentation: "modal" }}
+      screenOptions={{ presentation: "modal" }}
     >
       <Stack.Screen name="StorePickupOption" component={StorePickupOption} />
       <Stack.Screen
