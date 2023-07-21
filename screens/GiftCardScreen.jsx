@@ -8,9 +8,9 @@ const GiftCardScreen = () => {
   const translation = useRef(new Animated.Value(0)).current
 
   useEffect(() => {
-    Animated.timing(translation, {
+    Animated.spring(translation, {
       toValue: 100,
-      easing: Easing.bounce,
+      // easing: Easing.bounce,
       useNativeDriver: true,
     }).start();
   }, [])
