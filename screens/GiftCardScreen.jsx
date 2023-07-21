@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 const GiftCardScreen = () => {
   const navigation = useNavigation();
   
-  const translation = useRef(new Animated.Value(0)).current
+  const translation = useRef(new Animated.ValueXY({ x: 0, y: 0})).current
 
   useEffect(() => {
     Animated.spring(translation, {
