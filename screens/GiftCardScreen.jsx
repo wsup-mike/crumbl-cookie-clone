@@ -10,7 +10,7 @@ const GiftCardScreen = () => {
   useEffect(() => {
     Animated.spring(translation, {
       toValue: 100,
-      // easing: Easing.bounce,
+      easing: Easing.bounce,
       useNativeDriver: true,
     }).start();
   }, [])
