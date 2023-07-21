@@ -9,7 +9,7 @@ const GiftCardScreen = () => {
 
   useEffect(() => {
     Animated.timing(translation, {
-      toValue: 50,
+      toValue: 100,
       useNativeDriver: true,
     }).start();
   }, [])
