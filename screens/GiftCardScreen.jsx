@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView, Button, Animated } from 'react-native'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 
 const GiftCardScreen = () => {
