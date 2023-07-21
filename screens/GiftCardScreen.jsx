@@ -8,7 +8,7 @@ const GiftCardScreen = () => {
   const translation = useRef(new Animated.ValueXY({ x: 0, y: 0})).current
 
   useEffect(() => {
-    Animated.sequence([
+    Animated.parallel([
       
       Animated.spring(translation.x, {
         toValue: 100,
