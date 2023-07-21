@@ -8,11 +8,21 @@ const GiftCardScreen = () => {
   const translation = useRef(new Animated.ValueXY({ x: 0, y: 0})).current
 
   useEffect(() => {
-    Animated.spring(translation, {
-      toValue: 100,
-      easing: Easing.bounce,
-      useNativeDriver: true,
-    }).start();
+    Animated.sequence([
+      
+      Animated.spring(translation.x, {
+        toValue: 100,
+        easing: Easing.bounce,
+        useNativeDriver: true,
+      }),
+
+      Animated.spring(translation.y, {
+        toValue: -100,
+        easing: Easing.bounce,
+        useNativeDriver: true,
+      }),
+
+    ]).start();
   }, [])
 
   return (
@@ -26,7 +36,7 @@ const GiftCardScreen = () => {
             width: 100,
             height: 100,
             backgroundColor: 'yellow',
-            transform: [{ translateX: translation }]
+            transform: [{ translateY: translation }]
           }}
         />
     </SafeAreaView>
