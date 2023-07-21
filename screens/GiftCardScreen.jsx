@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const GiftCardScreen = () => {
   const navigation = useNavigation();
+  const translation = useRef(new Animated.Value(0)).current
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-pink-500'>
