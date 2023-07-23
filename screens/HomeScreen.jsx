@@ -9,6 +9,14 @@ const HomeScreen = () => {
 
   const translation = useRef(new Animated.Value(0)).current  
 
+  useEffect(() => {
+    Animated.timing(translation, {
+      toValue: 100,
+      duration: 1000,
+      useNativeDriver: true,
+    }).start();
+  }, []);
+
   const navigation = useNavigation();
 
   const toggleModal1 = () => {
