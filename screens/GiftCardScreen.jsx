@@ -72,7 +72,7 @@ const GiftCardScreen = () => {
           ],
         }}
       />
-      <Animated.View 
+      {/* <Animated.View 
         style={{
           width: 100,
           height: 100,
@@ -95,7 +95,7 @@ const GiftCardScreen = () => {
             { translateY: translation.y },
           ],
         }}
-      />
+      /> */}
       </View>
       </>
     </SafeAreaView>
