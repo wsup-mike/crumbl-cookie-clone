@@ -12,13 +12,13 @@ const GiftCardScreen = () => {
       
       Animated.spring(translation.x, {
         toValue: 100,
-        easing: Easing.bounce,
+        // easing: Easing.bounce,
         useNativeDriver: true,
       }),
 
       Animated.spring(translation.y, {
         toValue: -100,
-        easing: Easing.bounce,
+        // easing: Easing.bounce,
         useNativeDriver: true,
       }),
 
