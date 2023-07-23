@@ -45,10 +45,10 @@ const GiftCardScreen = () => {
           width: 100,
           height: 100,
           backgroundColor: 'yellow',
-          transform: [
-            { translateX: translation.x },
-            { translateY: translation.y },
-          ],
+          // transform: [
+          //   { translateX: translation.x },
+          //   { translateY: translation.y },
+          // ],
         }}
       />
     </SafeAreaView>
