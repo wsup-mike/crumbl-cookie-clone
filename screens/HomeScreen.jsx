@@ -104,8 +104,9 @@ const HomeScreen = () => {
             }),
             transform: [{ translateX: translation }],
             opacity: translation.interpolate({
-              inputRange: [0, 50, 100],
+              inputRange: [25, 50, 100],
               outputRange: [0, 1, 0],
+              extrapolate: 'clamp',
             }),
             transform: [
               { translateX: translation},
