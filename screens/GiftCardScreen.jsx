@@ -6,6 +6,7 @@ const GiftCardScreen = () => {
   const navigation = useNavigation();
   
   const translation = useRef(new Animated.ValueXY({ x: 0, y: 0 }))
+  
   // const opacity1 = useRef(new Animated.Value(0)).current
   // const opacity2 = useRef(new Animated.Value(0)).current
   // const opacity3 = useRef(new Animated.Value(0)).current
