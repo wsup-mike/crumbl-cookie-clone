@@ -58,8 +58,8 @@ const GiftCardScreen = () => {
           <Text className='text-3xl text-center'>Gift Card Screen: Purchase Digital Gift Cards</Text>
           <Button title='Gift Card Design #1' onPress={() => navigation.navigate('GiftCardSelectedScreen')} />
       </View>
-      <>
-      <View className='flex flex-row space-x-3'>
+      {/* <>
+      <View className='flex flex-row space-x-3'> */}
       <Animated.View 
         style={{
           width: 100,
@@ -96,8 +96,8 @@ const GiftCardScreen = () => {
           ],
         }}
       /> */}
-      </View>
-      </>
+      {/* </View>
+      </> */}
     </SafeAreaView>
   )
 }
