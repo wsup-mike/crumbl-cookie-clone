@@ -7,7 +7,7 @@ const HomeScreen = () => {
   const [modalOpen, setModalOpen] = useState(false)
   const [modal2Open, setModal2Open] = useState(false)
 
-  
+  const translation = useRef(new Animated.Value(0)).current  
 
   const navigation = useNavigation();
 
