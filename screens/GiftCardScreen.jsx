@@ -8,21 +8,30 @@ const GiftCardScreen = () => {
   const translation = useRef(new Animated.ValueXY({ x: 0, y: 0})).current
 
   useEffect(() => {
-    Animated.parallel([
-      
+    
+    Animated.sequence([
       Animated.spring(translation.x, {
         toValue: 100,
-        // easing: Easing.bounce,
         useNativeDriver: true,
       }),
+      
+      Animated.parallel([
+        
+        Animated.spring(translation.x, {
+          toValue: -100,
+          // easing: Easing.bounce,
+          useNativeDriver: true,
+        }),
 
-      Animated.spring(translation.y, {
-        toValue: -100,
-        // easing: Easing.bounce,
-        useNativeDriver: true,
-      }),
+        Animated.spring(translation.y, {
+          toValue: -100,
+          // easing: Easing.bounce,
+          useNativeDriver: true,
+        }),
 
-    ]).start();
+      ])
+    ]).start()
+
   }, [])
 
   return (
