@@ -5,8 +5,8 @@ import { useNavigation } from '@react-navigation/native';
 const GiftCardScreen = () => {
   const navigation = useNavigation();
   
-  const translation = useRef(new Animated.ValueXY({ x: 0, y: 0 }))
-  
+  const translation = useRef(new Animated.ValueXY({ x: 0, y: 0 })).current
+
   // const opacity1 = useRef(new Animated.Value(0)).current
   // const opacity2 = useRef(new Animated.Value(0)).current
   // const opacity3 = useRef(new Animated.Value(0)).current
@@ -59,8 +59,7 @@ const GiftCardScreen = () => {
           <Text className='text-3xl text-center'>Gift Card Screen: Purchase Digital Gift Cards</Text>
           <Button title='Gift Card Design #1' onPress={() => navigation.navigate('GiftCardSelectedScreen')} />
       </View>
-      {/* <>
-      <View className='flex flex-row space-x-3'> */}
+
       <Animated.View 
         style={{
           width: 100,
@@ -97,8 +96,7 @@ const GiftCardScreen = () => {
           ],
         }}
       /> */}
-      {/* </View>
-      </> */}
+   
     </SafeAreaView>
   )
 }
