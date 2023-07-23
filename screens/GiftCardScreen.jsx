@@ -10,7 +10,7 @@ const GiftCardScreen = () => {
   const opacity3 = useRef(new Animated.Value(0)).current
 
   useEffect(() => {
-    Animated.stagger(1000, [
+    Animated.stagger(5000, [
       Animated.timing(opacity1, {
         toValue: 1, 
         useNativeDriver: true,
