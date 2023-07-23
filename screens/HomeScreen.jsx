@@ -1,11 +1,13 @@
 import { View, Text, Button, SafeAreaView, Animated } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import Modal from 'react-native-modal'
 
 const HomeScreen = () => {
   const [modalOpen, setModalOpen] = useState(false)
   const [modal2Open, setModal2Open] = useState(false)
+
+  
 
   const navigation = useNavigation();
 
