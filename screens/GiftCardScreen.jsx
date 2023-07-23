@@ -30,6 +30,15 @@ const GiftCardScreen = () => {
   // }, [])
 
   useEffect(() => {
+    Animated.timing(translation2, {
+      toValue: 1, 
+      duration: 5000,
+      useNativeDriver: false,
+      
+    }).start();
+  }, []);
+  
+  useEffect(() => {
     Animated.sequence([
       Animated.spring(translation.x, {
         toValue: 100,
@@ -54,6 +63,7 @@ const GiftCardScreen = () => {
 
   }, [])
 
+
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-pink-500'>
       <View >
@@ -71,6 +81,18 @@ const GiftCardScreen = () => {
             { translateX: translation.x },
             { translateY: translation.y },
           ],
+        }}
+      />
+      <Animated.View 
+        style={{
+          width: 100,
+          height: 100,
+          backgroundColor: 'green',
+          // opacity: opacity1,
+          transform: [{ translateX: translation2.interpolate({
+            inputRange: [0, 1],
+            outputRange: [-100, 0], // Start fr. outside screen (-100% width) to onscreen (0% width)
+          }) }],
         }}
       />
       {/* <Animated.View 
