@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, Button, Animated, Easing } from 'react-native'
+import { View, Text, SafeAreaView, Button, Animated, Easing, Dimensions } from 'react-native'
 import React, { useRef, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 
@@ -6,6 +6,7 @@ const GiftCardScreen = () => {
   const navigation = useNavigation();
   
   const translation = useRef(new Animated.ValueXY({ x: 0, y: 0 })).current
+  const translation2 = useRef(new Animated.Value(Dimensions.get('window').width)).current
 
   // const opacity1 = useRef(new Animated.Value(0)).current
   // const opacity2 = useRef(new Animated.Value(0)).current
