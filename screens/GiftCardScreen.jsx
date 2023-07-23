@@ -5,51 +5,52 @@ import { useNavigation } from '@react-navigation/native';
 const GiftCardScreen = () => {
   const navigation = useNavigation();
   
-  const opacity1 = useRef(new Animated.Value(0)).current
-  const opacity2 = useRef(new Animated.Value(0)).current
-  const opacity3 = useRef(new Animated.Value(0)).current
-
-  useEffect(() => {
-    Animated.stagger(5000, [
-      Animated.timing(opacity1, {
-        toValue: 1, 
-        useNativeDriver: true,
-      }),
-      Animated.timing(opacity2, {
-        toValue: 1, 
-        useNativeDriver: true,
-      }),
-      Animated.timing(opacity3, {
-        toValue: 1, 
-        useNativeDriver: true,
-      }),
-    ]).start()
-  }, [])
+  const translation = useRef(new Animated.ValueXY({ x: 0, y: 0 }))
+  // const opacity1 = useRef(new Animated.Value(0)).current
+  // const opacity2 = useRef(new Animated.Value(0)).current
+  // const opacity3 = useRef(new Animated.Value(0)).current
 
   // useEffect(() => {
-  //   Animated.sequence([
-  //     Animated.spring(translation.x, {
-  //       toValue: 100,
+  //   Animated.stagger(400, [
+  //     Animated.timing(opacity1, {
+  //       toValue: 1, 
   //       useNativeDriver: true,
   //     }),
-      
-  //     Animated.parallel([
-        
-  //       Animated.spring(translation.x, {
-  //         toValue: -100,
-  //         // easing: Easing.bounce,
-  //         useNativeDriver: true,
-  //       }),
-
-  //       Animated.spring(translation.y, {
-  //         toValue: -100,
-  //         // easing: Easing.bounce,
-  //         useNativeDriver: true,
-  //       }),
-  //     ])
+  //     Animated.timing(opacity2, {
+  //       toValue: 1, 
+  //       useNativeDriver: true,
+  //     }),
+  //     Animated.timing(opacity3, {
+  //       toValue: 1, 
+  //       useNativeDriver: true,
+  //     }),
   //   ]).start()
-
   // }, [])
+
+  useEffect(() => {
+    Animated.sequence([
+      Animated.spring(translation.x, {
+        toValue: 100,
+        useNativeDriver: true,
+      }),
+      
+      Animated.parallel([
+        
+        Animated.spring(translation.x, {
+          toValue: -100,
+          // easing: Easing.bounce,
+          useNativeDriver: true,
+        }),
+
+        Animated.spring(translation.y, {
+          toValue: -100,
+          // easing: Easing.bounce,
+          useNativeDriver: true,
+        }),
+      ])
+    ]).start()
+
+  }, [])
 
   return (
     <SafeAreaView className='flex-1 items-center justify-center bg-pink-500'>
