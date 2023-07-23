@@ -99,7 +99,11 @@ const HomeScreen = () => {
             width: 100,
             height: 100,
             backgroundColor: 'white',
-            transform: [{ translateX: translation }]
+            transform: [{ translateX: translation }],
+            opacity: translation.interpolate({
+              inputRange: [0, 100],
+              outputRange: [0, 1],
+            }),
           }}
         />
     </SafeAreaView>
