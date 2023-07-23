@@ -54,6 +54,14 @@ const HomeScreen = () => {
             onPress={() => setModal2Open(true)}
           />
         </View>  
+        <Animated.View 
+          style={{
+            width: 100,
+            height: 100,
+            backgroundColor: 'teal',
+            transform: [{ translateX: translation }]
+          }}
+        />
       </Modal>
       
      
