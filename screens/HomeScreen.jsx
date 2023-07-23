@@ -104,6 +104,15 @@ const HomeScreen = () => {
               inputRange: [0, 50, 100],
               outputRange: [0, 1, 0],
             }),
+            transform: [
+              { translateX: translation},
+              {
+                rotate: translation.interpolate({
+                  inputRange: [0, 100],
+                  outputRange: ['0deg', '360deg']
+                })
+              },
+            ],
           }}
         />
     </SafeAreaView>
