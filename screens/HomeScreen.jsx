@@ -101,8 +101,8 @@ const HomeScreen = () => {
             backgroundColor: 'white',
             transform: [{ translateX: translation }],
             opacity: translation.interpolate({
-              inputRange: [0, 100],
-              outputRange: [0, 1],
+              inputRange: [0, 50, 100],
+              outputRange: [0, 1, 0],
             }),
           }}
         />
