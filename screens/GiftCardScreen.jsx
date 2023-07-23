@@ -49,7 +49,7 @@ const GiftCardScreen = () => {
           width: 100,
           height: 100,
           backgroundColor: 'yellow',
-          
+          opacity: opacity1,
           // transform: [
           //   { translateX: translation.x },
           //   { translateY: translation.y },
@@ -61,7 +61,7 @@ const GiftCardScreen = () => {
           width: 100,
           height: 100,
           backgroundColor: 'yellow',
-          
+          opacity: opacity2,
           // transform: [
           //   { translateX: translation.x },
           //   { translateY: translation.y },
@@ -73,7 +73,7 @@ const GiftCardScreen = () => {
           width: 100,
           height: 100,
           backgroundColor: 'yellow',
-          
+          opacity: opacity3,
           // transform: [
           //   { translateX: translation.x },
           //   { translateY: translation.y },
