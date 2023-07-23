@@ -41,6 +41,7 @@ const GiftCardScreen = () => {
           <Button title='Gift Card Design #1' onPress={() => navigation.navigate('GiftCardSelectedScreen')} />
       </View>
       <>
+      <View className='flex flex-row'>
       <Animated.View 
         style={{
           width: 100,
@@ -77,6 +78,7 @@ const GiftCardScreen = () => {
           // ],
         }}
       />
+      </View>
       </>
     </SafeAreaView>
   )
