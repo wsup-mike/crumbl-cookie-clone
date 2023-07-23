@@ -40,17 +40,44 @@ const GiftCardScreen = () => {
           <Text className='text-3xl text-center'>Gift Card Screen: Purchase Digital Gift Cards</Text>
           <Button title='Gift Card Design #1' onPress={() => navigation.navigate('GiftCardSelectedScreen')} />
       </View>
+      <>
       <Animated.View 
         style={{
           width: 100,
           height: 100,
           backgroundColor: 'yellow',
+          marginBottom: 10,
           // transform: [
           //   { translateX: translation.x },
           //   { translateY: translation.y },
           // ],
         }}
       />
+      <Animated.View 
+        style={{
+          width: 100,
+          height: 100,
+          backgroundColor: 'yellow',
+          marginBottom: 10,
+          // transform: [
+          //   { translateX: translation.x },
+          //   { translateY: translation.y },
+          // ],
+        }}
+      />
+      <Animated.View 
+        style={{
+          width: 100,
+          height: 100,
+          backgroundColor: 'yellow',
+          marginBottom: 10,
+          // transform: [
+          //   { translateX: translation.x },
+          //   { translateY: translation.y },
+          // ],
+        }}
+      />
+      </>
     </SafeAreaView>
   )
 }
