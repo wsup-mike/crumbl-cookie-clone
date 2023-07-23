@@ -13,7 +13,7 @@ const HomeScreen = () => {
     Animated.timing(translation, {
       toValue: 100,
       duration: 1000,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start();
   }, []);
 
