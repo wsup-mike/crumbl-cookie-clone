@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 const GiftCardSelectedScreen = () => {
+    const [headerShown, setHeaderShown] = useState(false)
 
     const navigation = useNavigation();
 
