@@ -9,6 +9,20 @@ const GiftCardSelectedScreen = () => {
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
+            <View
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: 80,
+                    backgroundColor: 'tomato',
+                    transform: [{
+                        translateY: headerShown ? 0 : -100,
+                    }],
+                }}
+            />
+            
             <ScrollView>
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
