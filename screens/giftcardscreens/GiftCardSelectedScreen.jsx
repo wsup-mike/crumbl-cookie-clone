@@ -23,7 +23,21 @@ const GiftCardSelectedScreen = () => {
                 }}
             />
             
-            <ScrollView>
+            <ScrollView
+                onScroll={(event) => {
+                    const scrolling = event.nativeEvent.contentOffset.y;
+
+                    if (scrolling > 100) {
+                        setHeaderShown(true) 
+                    } else {
+                        setHeaderShown(false)
+                    }
+                }}
+
+                scrollEventThrottle={16}
+
+                style={{ flex: 1, height: 1000 }}
+            >
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                     <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
