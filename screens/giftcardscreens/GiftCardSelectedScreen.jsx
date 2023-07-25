@@ -46,21 +46,7 @@ const GiftCardSelectedScreen = () => {
                         showsVerticalScrollIndicator={false}
                     >
                         <View className='flex-1 items-center justify-center'>
-                            <Pressable
-                                onPress={() => navigation.navigate('SelectGiftCardSendDate')}
-                            >
-                                <View style={{
-                                 
-                                }}>
-                                    <Text
-                                        style={{
-                                            
-                                        }}
-                                    >
-                                        SelectGiftCardSendDate-Pressable
-                                    </Text>
-                                </View>
-                            </Pressable>
+
                             <Pressable
                                 onPress={() => navigation.navigate('SelectGiftCardSendDate')}
                             >
