@@ -64,7 +64,9 @@ const GiftCardSelectedScreen = () => {
                                 y: scrolling,
                             }
                         }}
-                    ])}     
+                    ],
+                        { useNativeDriver: true }
+                    )}     
 
                     scrollEventThrottle={16}
 
