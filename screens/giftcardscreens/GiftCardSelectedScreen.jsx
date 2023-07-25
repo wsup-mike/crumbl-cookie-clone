@@ -9,7 +9,7 @@ const GiftCardSelectedScreen = () => {
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
-            <View
+            {/* <View
                 style={{
                     position: 'absolute',
                     top: 0,
@@ -21,7 +21,7 @@ const GiftCardSelectedScreen = () => {
                         translateY: headerShown ? 0 : -100,
                     }],
                 }}
-            />
+            /> */}
             
             {/* <ScrollView
                 onScroll={(event) => {
