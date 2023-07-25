@@ -123,6 +123,11 @@ const GiftCardSelectedScreen = () => {
                                     <Text style={styles.buttonText}>FinalGiftCardOrderConfirmation</Text>
                                 </View>
                             </Pressable>
+                            <Pressable onPress={() => navigation.navigate('ReasonForCancellation')}>
+                                <View style={styles.button}>
+                                    <Text style={styles.buttonText}>ReasonForCancellation</Text>
+                                </View>
+                            </Pressable>
                             {/* <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} /> */}
                             {/* <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} /> */}
                             {/* <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} /> */}
@@ -136,7 +141,7 @@ const GiftCardSelectedScreen = () => {
                             {/* <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} /> */}
                             {/* <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} /> */}
                             {/* <Button title='FinalGiftCardOrderConfirmation' onPress={() => navigation.navigate('FinalGiftCardOrderConfirmation')} /> */}
-                            <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} />
+                            {/* <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} /> */}
                         </View>
                     </ScrollView>
                 </View>
