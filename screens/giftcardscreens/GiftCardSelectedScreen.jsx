@@ -25,6 +25,9 @@ const GiftCardSelectedScreen = () => {
             />
             {/* ScrollView: Title and Buttons */}
             <View>
+                
+                <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
+                <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
                 <ScrollView 
                     showsVerticalScrollIndicator={false}
 
@@ -42,9 +45,6 @@ const GiftCardSelectedScreen = () => {
 
                     style={{ flex: 1, height: 1000 }}
                 >
-                <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
-                <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-                
                     <View className='flex-1 items-center justify-center'>
                         <Pressable onPress={() => navigation.navigate('SelectGiftCardSendDate')}>
                             <View style={styles.button}>
