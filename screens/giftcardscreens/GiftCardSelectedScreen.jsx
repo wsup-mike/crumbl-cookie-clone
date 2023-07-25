@@ -7,6 +7,8 @@ const GiftCardSelectedScreen = () => {
 
     const navigation = useNavigation();
 
+    const scrolling = useRef(new Animated.Value(0)).current;
+
     const translation = useRef(new Animated.Value(-100)).current;
 
     // useEffect(() => {
@@ -41,15 +43,15 @@ const GiftCardSelectedScreen = () => {
                 <ScrollView 
                     showsVerticalScrollIndicator={false}
 
-                    onScroll={(event) => {
-                        const scrolling = event.nativeEvent.contentOffset.y;
+                    // onScroll={(event) => {
+                    //     const scrolling = event.nativeEvent.contentOffset.y;
 
-                        if (scrolling > 100) {
-                            setHeaderShown(true) 
-                        } else {
-                            setHeaderShown(false)
-                        }
-                    }}
+                    //     if (scrolling > 100) {
+                    //         setHeaderShown(true) 
+                    //     } else {
+                    //         setHeaderShown(false)
+                    //     }
+                    // }}
 
                     onScroll={Animated.event([
                         { nativeEvent: {
