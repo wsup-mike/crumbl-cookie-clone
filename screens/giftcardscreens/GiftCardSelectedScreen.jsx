@@ -23,7 +23,7 @@ const GiftCardSelectedScreen = () => {
                 }}
             />
             
-            <ScrollView
+            {/* <ScrollView
                 onScroll={(event) => {
                     const scrolling = event.nativeEvent.contentOffset.y;
 
@@ -37,7 +37,7 @@ const GiftCardSelectedScreen = () => {
                 scrollEventThrottle={16}
 
                 style={{ flex: 1, height: 1000 }}
-            >
+            > */}
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                     <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
@@ -58,7 +58,7 @@ const GiftCardSelectedScreen = () => {
                         <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} />
 
                 </View>
-            </ScrollView>
+            {/* </ScrollView> */}
 
         </SafeAreaView>
     )
