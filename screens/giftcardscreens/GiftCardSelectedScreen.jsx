@@ -7,7 +7,7 @@ const GiftCardSelectedScreen = () => {
 
     const navigation = useNavigation();
 
-    
+    const translation = useRef(new Animated.Value(-100)).current;
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
