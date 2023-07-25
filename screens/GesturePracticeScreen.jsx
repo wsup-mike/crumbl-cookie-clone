@@ -3,8 +3,10 @@ import React from 'react'
 
 const GesturePracticeScreen = () => {
   return (
-    <SafeAreaView>
-      <Text>GesturePracticeScreen</Text>
+    <SafeAreaView classname='flex-1 items-center bg-slate-500'>
+        <View>
+            <Text classname='text-3xl text-center font-black'>GesturePracticeScreen</Text>
+        </View>
     </SafeAreaView>
   )
 }
