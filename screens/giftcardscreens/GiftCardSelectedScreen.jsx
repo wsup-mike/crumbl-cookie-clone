@@ -103,6 +103,11 @@ const GiftCardSelectedScreen = () => {
                                     <Text style={styles.buttonText}>PaymentMethodScreen</Text>
                                 </View>
                             </Pressable>
+                            <Pressable onPress={() => navigation.navigate('AddCardScreen')}>
+                                <View style={styles.button}>
+                                    <Text style={styles.buttonText}>AddCardScreen</Text>
+                                </View>
+                            </Pressable>
                             {/* <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} /> */}
                             {/* <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} /> */}
                             {/* <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} /> */}
@@ -112,7 +117,7 @@ const GiftCardSelectedScreen = () => {
                             {/* <Button title='GiftCardPlaceOrder' onPress={() => navigation.navigate('GiftCardPlaceOrder')} /> */}
                             {/* <Button title='PriceBreakdown' onPress={() => navigation.navigate('PriceBreakdown')} /> */}
                             {/* <Button title='PaymentMethodScreen' onPress={() => navigation.navigate('PaymentMethodScreen')} /> */}
-                            <Button title='AddCardScreen' onPress={() => navigation.navigate('AddCardScreen')} />
+                            {/* <Button title='AddCardScreen' onPress={() => navigation.navigate('AddCardScreen')} /> */}
                             <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} />
                             <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} />
                             <Button title='FinalGiftCardOrderConfirmation' onPress={() => navigation.navigate('FinalGiftCardOrderConfirmation')} />
