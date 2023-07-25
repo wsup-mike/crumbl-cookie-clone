@@ -83,12 +83,17 @@ const GiftCardSelectedScreen = () => {
                                     <Text style={styles.buttonText}>AddGiftCardTextMessage</Text>
                                 </View>
                             </Pressable>
+                            <Pressable onPress={() => navigation.navigate('ReviewGiftCardOrder')}>
+                                <View style={styles.button}>
+                                    <Text style={styles.buttonText}>ReviewGiftCardOrder</Text>
+                                </View>
+                            </Pressable>
                             {/* <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} /> */}
                             {/* <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} /> */}
                             {/* <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} /> */}
                             {/* <Button title='AddGiftCardRecipients' onPress={() => navigation.navigate('AddGiftCardRecipients')} /> */}
                             {/* <Button title='AddGiftCardTextMessage' onPress={() => navigation.navigate('AddGiftCardTextMessage')} /> */}
-                            <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} />
+                            {/* <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} /> */}
                             <Button title='GiftCardPlaceOrder' onPress={() => navigation.navigate('GiftCardPlaceOrder')} />
                             <Button title='PriceBreakdown' onPress={() => navigation.navigate('PriceBreakdown')} />
                             <Button title='PaymentMethodScreen' onPress={() => navigation.navigate('PaymentMethodScreen')} />
