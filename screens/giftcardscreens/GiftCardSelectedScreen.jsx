@@ -46,29 +46,42 @@ const GiftCardSelectedScreen = () => {
                         showsVerticalScrollIndicator={false}
                     >
                         <View className='flex-1 items-center justify-center'>
-
                             <Pressable
                                 onPress={() => navigation.navigate('SelectGiftCardSendDate')}
                             >
-                                <View style={{
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    backgroundColor: '#00bfff',
-                                    borderRadius: 15,
-                                }}>
+                                <View style={styles.button}>
                                     <Text
-                                        style={{
-                                            color: 'white',
-                                            padding: 20,
-                                        }}
+                                        style={styles.buttonText}
                                     >
-                                        SelectGiftCardSendDate-Pressable
+                                        SelectGiftCardSendDate
                                     </Text>
                                 </View>
                             </Pressable>
-                            <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
-                            <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
-                            <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
+                            <Pressable
+                                onPress={() => navigation.navigate('SelectGiftCardSendTime')}
+                            >
+                                <View style={styles.button}>
+                                    <Text
+                                        style={styles.buttonText}
+                                    >
+                                        SelectGiftCardSendTime
+                                    </Text>
+                                </View>
+                            </Pressable>
+                            <Pressable
+                                onPress={() => navigation.navigate('SelectSendGiftCardFromGiftCardSendTime')}
+                            >
+                                <View style={styles.button}>
+                                    <Text
+                                        style={styles.buttonText}
+                                    >
+                                        SendGiftCardFrom
+                                    </Text>
+                                </View>
+                            </Pressable>
+                            {/* <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} /> */}
+                            {/* <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} /> */}
+                            {/* <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} /> */}
                             <Button title='AddGiftCardRecipients' onPress={() => navigation.navigate('AddGiftCardRecipients')} />
                             <Button title='AddGiftCardTextMessage' onPress={() => navigation.navigate('AddGiftCardTextMessage')} />
                             <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} />
