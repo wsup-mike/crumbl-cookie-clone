@@ -40,7 +40,7 @@ const GiftCardSelectedScreen = () => {
                 
                 <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                 <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-                <ScrollView 
+                <Animated.ScrollView 
                     showsVerticalScrollIndicator={false}
 
                     // onScroll={(event) => {
@@ -137,7 +137,7 @@ const GiftCardSelectedScreen = () => {
                             </View>
                         </Pressable>
                     </View>
-                </ScrollView>
+                </Animated.ScrollView>
             </View>
         </SafeAreaView>
     )
