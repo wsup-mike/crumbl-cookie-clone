@@ -92,6 +92,10 @@ const HomeScreen = () => {
             // onPress={() => navigation.navigate('Order', { screen: 'OrderScreen'})}
             onPress={() => navigation.navigate('Order', { screen: 'OrderScreen'})}
           />
+          <Button 
+            title='Go to GesturePracticeScreen' 
+            onPress={() => navigation.navigate('GesturePracticeScreen', { screen: 'GesturePracticeScreen'})}
+          />
           
       </View>
       <Animated.View 
