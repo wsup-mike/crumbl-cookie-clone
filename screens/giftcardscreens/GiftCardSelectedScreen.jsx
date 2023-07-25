@@ -9,6 +9,7 @@ const GiftCardSelectedScreen = () => {
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
+            
             {/* <View
                 style={{
                     position: 'absolute',
@@ -24,60 +25,82 @@ const GiftCardSelectedScreen = () => {
             /> */}
             
             {/* <ScrollView
-                onScroll={(event) => {
-                    const scrolling = event.nativeEvent.contentOffset.y;
+                    onScroll={(event) => {
+                        const scrolling = event.nativeEvent.contentOffset.y;
 
-                    if (scrolling > 100) {
-                        setHeaderShown(true) 
-                    } else {
-                        setHeaderShown(false)
-                    }
-                }}
+                        if (scrolling > 100) {
+                            setHeaderShown(true) 
+                        } else {
+                            setHeaderShown(false)
+                        }
+                    }}
 
-                scrollEventThrottle={16}
+                    scrollEventThrottle={16}
 
-                style={{ flex: 1, height: 1000 }}
+                    style={{ flex: 1, height: 1000 }}
             > */}
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                     <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-                    <View className='flex-1 items-center justify-center'>
-                        <Pressable
-                            onPress={() => navigation.navigate('SelectGiftCardSendDate')}
-                        >
-                            <View style={{
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                             
-                                backgroundColor: '#00bfff',
-                                borderRadius: 15,
-                                
-                            }}>
-                                <Text
-                                    style={{
-                                        color: 'white',
-                                        padding: 20,
-                                    }}
-                                >
-                                    SelectGiftCardSendDate-Pressable
-                                </Text>
-                            </View>
-                        </Pressable>
-                        <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
-                        <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
-                        <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
-                        <Button title='AddGiftCardRecipients' onPress={() => navigation.navigate('AddGiftCardRecipients')} />
-                        <Button title='AddGiftCardTextMessage' onPress={() => navigation.navigate('AddGiftCardTextMessage')} />
-                        <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} />
-                        <Button title='GiftCardPlaceOrder' onPress={() => navigation.navigate('GiftCardPlaceOrder')} />
-                        <Button title='PriceBreakdown' onPress={() => navigation.navigate('PriceBreakdown')} />
-                        <Button title='PaymentMethodScreen' onPress={() => navigation.navigate('PaymentMethodScreen')} />
-                        <Button title='AddCardScreen' onPress={() => navigation.navigate('AddCardScreen')} />
-                        <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} />
-                        <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} />
-                        <Button title='FinalGiftCardOrderConfirmation' onPress={() => navigation.navigate('FinalGiftCardOrderConfirmation')} />
-                        <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} />
-                    </View>
+                    <ScrollView
+                        showsVerticalScrollIndicator={false}
+                    >
+                        <View className='flex-1 items-center justify-center'>
+                            <Pressable
+                                onPress={() => navigation.navigate('SelectGiftCardSendDate')}
+                            >
+                                <View style={{
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    backgroundColor: '#00bfff',
+                                    borderRadius: 15,
+                                    margin: 10,
+                                }}>
+                                    <Text
+                                        style={{
+                                            color: 'white',
+                                            padding: 20,
+                                        }}
+                                    >
+                                        SelectGiftCardSendDate-Pressable
+                                    </Text>
+                                </View>
+                            </Pressable>
+                            <Pressable
+                                onPress={() => navigation.navigate('SelectGiftCardSendDate')}
+                            >
+                                <View style={{
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    backgroundColor: '#00bfff',
+                                    borderRadius: 15,
+                                }}>
+                                    <Text
+                                        style={{
+                                            color: 'white',
+                                            padding: 20,
+                                        }}
+                                    >
+                                        SelectGiftCardSendDate-Pressable
+                                    </Text>
+                                </View>
+                            </Pressable>
+                            <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
+                            <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
+                            <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
+                            <Button title='AddGiftCardRecipients' onPress={() => navigation.navigate('AddGiftCardRecipients')} />
+                            <Button title='AddGiftCardTextMessage' onPress={() => navigation.navigate('AddGiftCardTextMessage')} />
+                            <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} />
+                            <Button title='GiftCardPlaceOrder' onPress={() => navigation.navigate('GiftCardPlaceOrder')} />
+                            <Button title='PriceBreakdown' onPress={() => navigation.navigate('PriceBreakdown')} />
+                            <Button title='PaymentMethodScreen' onPress={() => navigation.navigate('PaymentMethodScreen')} />
+                            <Button title='AddCardScreen' onPress={() => navigation.navigate('AddCardScreen')} />
+                            <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} />
+                            <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} />
+                            <Button title='FinalGiftCardOrderConfirmation' onPress={() => navigation.navigate('FinalGiftCardOrderConfirmation')} />
+                            <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} />
+                        </View>
+                    </ScrollView>
                 </View>
             {/* </ScrollView> */}
 
