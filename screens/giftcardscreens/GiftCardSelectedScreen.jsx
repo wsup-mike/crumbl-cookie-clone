@@ -12,7 +12,7 @@ const GiftCardSelectedScreen = () => {
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
             {/* Header  */}
-            <View
+            <Animated.View
                 style={{
                     position: 'absolute',
                     top: 0,
