@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 const GiftCardSelectedScreen = () => {
-    const [headerShown, setHeaderShown] = useState(false)
+    // const [headerShown, setHeaderShown] = useState(false)
 
     const navigation = useNavigation();
 
@@ -28,7 +28,7 @@ const GiftCardSelectedScreen = () => {
                     right: 0,
                     height: 80,
                     backgroundColor: 'tomato',
-                    transform: [{
+                    transform: [{ 
                         translateY: translation,
                     }],
                 }}
@@ -50,6 +50,14 @@ const GiftCardSelectedScreen = () => {
                             setHeaderShown(false)
                         }
                     }}
+
+                    onScroll={Animated.event([
+                        { nativeEvent: {
+                            contentOffset: {
+                                y: scrolling,
+                            }
+                        }}
+                    ])}     
 
                     scrollEventThrottle={16}
 
