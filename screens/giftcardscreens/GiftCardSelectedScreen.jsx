@@ -1,5 +1,5 @@
 import { View, Text, Button, SafeAreaView, ScrollView, Animated, StyleSheet, Pressable } from 'react-native'
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 const GiftCardSelectedScreen = () => {
@@ -8,6 +8,14 @@ const GiftCardSelectedScreen = () => {
     const navigation = useNavigation();
 
     const translation = useRef(new Animated.Value(-100)).current;
+
+    useEffect(() => {
+        Animated.timing(translation, {
+            toValue: headerShown ? 0 : -100,
+            duration: 250,
+            useNativeDriver: true,
+        })
+    }, [headerShown])
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
