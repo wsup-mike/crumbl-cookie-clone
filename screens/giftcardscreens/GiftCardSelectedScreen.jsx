@@ -14,7 +14,7 @@ const GiftCardSelectedScreen = () => {
             toValue: headerShown ? 0 : -100,
             duration: 1000,
             useNativeDriver: true,
-        })
+        }).start();
     }, [headerShown])
 
     return (
