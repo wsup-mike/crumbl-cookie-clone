@@ -29,7 +29,7 @@ const GiftCardSelectedScreen = () => {
                     height: 80,
                     backgroundColor: 'tomato',
                     transform: [{
-                        translateY: headerShown ? 0 : -100,
+                        translateY: translation,
                     }],
                 }}
             />
