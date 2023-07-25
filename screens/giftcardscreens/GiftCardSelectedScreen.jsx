@@ -1,11 +1,13 @@
 import { View, Text, Button, SafeAreaView, ScrollView, Animated, StyleSheet, Pressable } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 const GiftCardSelectedScreen = () => {
     const [headerShown, setHeaderShown] = useState(false)
 
     const navigation = useNavigation();
+
+    
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
