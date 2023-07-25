@@ -41,7 +41,7 @@ const GiftCardSelectedScreen = () => {
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                     <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-                    <View className='space-y-10'>
+                    <View>
                         <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
                         <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
                         <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
