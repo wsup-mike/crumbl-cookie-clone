@@ -1,4 +1,4 @@
-import { View, Text, Button, SafeAreaView, ScrollView, Animated, StyleSheet } from 'react-native'
+import { View, Text, Button, SafeAreaView, ScrollView, Animated, StyleSheet, Pressable } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
@@ -41,7 +41,28 @@ const GiftCardSelectedScreen = () => {
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                     <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-                    <View>
+                    <View className='flex-1 items-center justify-center'>
+                        <Pressable
+                            onPress={() => navigation.navigate('SelectGiftCardSendDate')}
+                        >
+                            <View style={{
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                             
+                                backgroundColor: '#00bfff',
+                                borderRadius: 15,
+                                
+                            }}>
+                                <Text
+                                    style={{
+                                        color: 'white',
+                                        padding: 20,
+                                    }}
+                                >
+                                    SelectGiftCardSendDate-Pressable
+                                </Text>
+                            </View>
+                        </Pressable>
                         <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
                         <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
                         <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
@@ -71,6 +92,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'grey',
         borderWidth: 1,
         borderColor: 'black',
+        height: 10,
+        width: 20,
     },
 })
 
