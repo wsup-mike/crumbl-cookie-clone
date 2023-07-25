@@ -50,16 +50,11 @@ const GiftCardSelectedScreen = () => {
                                 onPress={() => navigation.navigate('SelectGiftCardSendDate')}
                             >
                                 <View style={{
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    backgroundColor: '#00bfff',
-                                    borderRadius: 15,
-                                    margin: 10,
+                                 
                                 }}>
                                     <Text
                                         style={{
-                                            color: 'white',
-                                            padding: 20,
+                                            
                                         }}
                                     >
                                         SelectGiftCardSendDate-Pressable
@@ -112,12 +107,15 @@ const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'grey',
-        borderWidth: 1,
-        borderColor: 'black',
-        height: 10,
-        width: 20,
+        backgroundColor: '#00bfff',
+        borderRadius: 15,
+        margin: 10,
     },
+    
+    buttonText: {
+        color: 'white',
+        padding: 20,
+    }
 })
 
 export default GiftCardSelectedScreen
