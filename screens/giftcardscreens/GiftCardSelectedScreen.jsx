@@ -41,7 +41,7 @@ const GiftCardSelectedScreen = () => {
                 <View>
                     <Text className='text-3xl text-center'>GiftCardSelectedScreen screen</Text>
                     <Text className='text-2xl text-center'>Digital Gift Card Details</Text>
-
+                    <View className='space-y-10'>
                         <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} />
                         <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} />
                         <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} />
@@ -56,7 +56,7 @@ const GiftCardSelectedScreen = () => {
                         <Button title='OrderSuccessScreen' onPress={() => navigation.navigate('OrderSuccessScreen')} />
                         <Button title='FinalGiftCardOrderConfirmation' onPress={() => navigation.navigate('FinalGiftCardOrderConfirmation')} />
                         <Button title='ReasonForCancellation' onPress={() => navigation.navigate('ReasonForCancellation')} />
-
+                    </View>
                 </View>
             {/* </ScrollView> */}
 
