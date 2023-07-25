@@ -93,6 +93,11 @@ const GiftCardSelectedScreen = () => {
                                     <Text style={styles.buttonText}>GiftCardPlaceOrder</Text>
                                 </View>
                             </Pressable>
+                            <Pressable onPress={() => navigation.navigate('PriceBreakdown')}>
+                                <View style={styles.button}>
+                                    <Text style={styles.buttonText}>PriceBreakdown</Text>
+                                </View>
+                            </Pressable>
                             {/* <Button title='SelectGiftCardSendDate' onPress={() => navigation.navigate('SelectGiftCardSendDate')} /> */}
                             {/* <Button title='SelectGiftCardSendTime' onPress={() => navigation.navigate('SelectGiftCardSendTime')} /> */}
                             {/* <Button title='SendGiftCardFrom' onPress={() => navigation.navigate('SendGiftCardFrom')} /> */}
@@ -100,7 +105,7 @@ const GiftCardSelectedScreen = () => {
                             {/* <Button title='AddGiftCardTextMessage' onPress={() => navigation.navigate('AddGiftCardTextMessage')} /> */}
                             {/* <Button title='ReviewGiftCardOrder' onPress={() => navigation.navigate('ReviewGiftCardOrder')} /> */}
                             {/* <Button title='GiftCardPlaceOrder' onPress={() => navigation.navigate('GiftCardPlaceOrder')} /> */}
-                            <Button title='PriceBreakdown' onPress={() => navigation.navigate('PriceBreakdown')} />
+                            {/* <Button title='PriceBreakdown' onPress={() => navigation.navigate('PriceBreakdown')} /> */}
                             <Button title='PaymentMethodScreen' onPress={() => navigation.navigate('PaymentMethodScreen')} />
                             <Button title='AddCardScreen' onPress={() => navigation.navigate('AddCardScreen')} />
                             <Button title='OrderIsProcessingScreen' onPress={() => navigation.navigate('OrderIsProcessingScreen')} />
