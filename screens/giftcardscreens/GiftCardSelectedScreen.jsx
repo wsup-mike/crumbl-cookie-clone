@@ -9,7 +9,12 @@ const GiftCardSelectedScreen = () => {
 
     const scrolling = useRef(new Animated.Value(0)).current;
 
-    const translation = useRef(new Animated.Value(-100)).current;
+    // const translation = useRef(new Animated.Value(-100)).current;
+    const translation = scrolling.interpolate({
+        inputRange: [100, 130],
+        outputRange: [-100, 0],
+        extrapolate: 'clamp',
+    });
 
     // useEffect(() => {
     //     Animated.timing(translation, {
