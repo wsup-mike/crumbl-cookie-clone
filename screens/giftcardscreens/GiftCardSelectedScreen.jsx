@@ -9,13 +9,13 @@ const GiftCardSelectedScreen = () => {
 
     const translation = useRef(new Animated.Value(-100)).current;
 
-    useEffect(() => {
-        Animated.timing(translation, {
-            toValue: headerShown ? 0 : -100,
-            duration: 150,
-            useNativeDriver: true,
-        }).start();
-    }, [headerShown])
+    // useEffect(() => {
+    //     Animated.timing(translation, {
+    //         toValue: headerShown ? 0 : -100,
+    //         duration: 150,
+    //         useNativeDriver: true,
+    //     }).start();
+    // }, [headerShown])
 
     return (
         <SafeAreaView className='flex-1 items-center justify-center'>
