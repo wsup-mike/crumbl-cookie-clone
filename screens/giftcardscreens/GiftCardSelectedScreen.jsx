@@ -64,4 +64,14 @@ const GiftCardSelectedScreen = () => {
     )
 }
 
+const styles = StyleSheet.create({
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'grey',
+        borderWidth: 1,
+        borderColor: 'black',
+    },
+})
+
 export default GiftCardSelectedScreen
