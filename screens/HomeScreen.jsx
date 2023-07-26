@@ -29,7 +29,7 @@ const HomeScreen = () => {
 
 
   return (
-    <SafeAreaView className='flex-1 items-center justify-center bg-purple-400'>
+    <SafeAreaView className='flex-1 items-center justify-center bg-slate-700'>
       {/* 1st Modal */}
       
      <Modal 
